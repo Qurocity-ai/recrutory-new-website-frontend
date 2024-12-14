@@ -1,0 +1,57 @@
+.runningText {
+    width: 100%;
+    background-color: #02586F;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    overflow: hidden;
+    /* Hide overflow for smooth scrolling */
+    position: relative;
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.runningText .content {
+    display: flex;
+    /* Use flexbox for alignment */
+    gap: 50px;
+    /* Add space between repeated text */
+    animation: scrollText 10s linear infinite;
+    /* Smooth continuous scrolling */
+    white-space: nowrap;
+    /* Prevent wrapping */
+    cursor: pointer;
+}
+
+.runningText span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    display: inline-block;
+}
+
+/* Keyframes for seamless scrolling */
+@keyframes scrollText {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-30%);
+    }
+}
+
+/* Responsive styles for mobile screens */
+@media screen and (max-width: 768px) {
+    .runningText {
+        padding: 15px 0;
+    }
+
+    .runningText span {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+}

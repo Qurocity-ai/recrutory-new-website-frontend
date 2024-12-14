@@ -1,0 +1,100 @@
+.main {
+    width: 100%;
+    display: flex;
+    color: #4198B2;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 0.5rem; */
+    /* border: 3px solid gold; */
+}
+
+.left {
+    width: 40%;
+    columns: #4198B2;
+    
+    
+}
+
+.right {
+    width: 42%;
+}
+.right img{
+    max-width: 500px;
+}
+
+.register_btn {
+    background-color: #AE191B;
+    border-radius: 30px;
+    color: white;
+    width: 250px;
+    height: 60px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    gap: 20px;
+}
+
+.register_btn:hover {
+    background-color: red;
+}
+.left p{
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        /* margin-left: 2rem; */
+        justify-content: center;
+        
+    }
+
+    .right {
+        order: -1;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .left {
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .left h1 {
+        font-size: 1.5rem;
+       
+    }
+
+    .left h3 {
+        font-size: 1.2rem;
+        /* Adjust font size for sub-headings */
+    }
+
+    .left p {
+        font-size: 1rem;
+        color: #4198B2;
+    }
+
+    .register_btn {
+        width: 150px;
+        /* Reduce button size */
+        height: 50px;
+        font-size: 0.9rem;
+    }
+
+    .right img {
+        width: 100%;
+        /* Ensure the image is responsive */
+        max-width: 300px;
+        /* Set a max-width for the image */
+        height: auto;
+        
+    }
+}

@@ -1,0 +1,140 @@
+.footer {
+    width: 100%;
+    background-color: #BCE1EB;
+    font-family: 'Arial', sans-serif;
+    /* border: 3px solid greenyellow; */
+}
+
+
+
+.footer_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 1.5rem;
+    
+    
+}
+
+.footer_about,
+.footer_links,
+.footer_contact {
+    flex: 1;
+    min-width: 250px;
+    /* margin-left: 1.5rem; */
+}
+
+.footer_about h4,
+.footer_links h4,
+.footer_contact h4 {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    color: #02586F;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #165a6b;
+    font-size: 0.9rem;
+    transition: color 0.3s ease-in-out;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+.footer ul li a:hover {
+    color: #02586F;
+    text-decoration: underline;
+ 
+}
+
+
+.footer_about p {
+    font-size: 0.9rem;
+    color: #165a6b;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+}
+.footer_contact p{
+        font-size: 0.9rem;
+            color: #165a6b;
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 0.5px;
+}
+/* Media Queries for Responsive Design */
+
+/* Large screens */
+@media screen and (max-width: 1024px) {
+    .footer_top {
+        gap: 20px;
+    }
+
+    .footer_bottom {
+        gap: 15px;
+    }
+
+    .footer_about,
+    .footer_links,
+    .footer_contact {
+        min-width: 200px;
+    }
+}
+
+/* Medium screens */
+@media screen and (max-width: 768px) {
+    .footer_top {
+        flex-direction: column;
+        text-align: center;
+   
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_about,
+    .footer_links,
+    .footer_contact {
+        text-align: center;
+        min-width: unset;
+    }
+
+    .footer_about h4,
+    .footer_links h4,
+    .footer_contact h4 {
+        text-align: center;
+    }
+}
+
+/* Small screens */
+@media screen and (max-width: 480px) {
+    .footer ul li a {
+        font-size: 14px;
+    }
+
+    .footer_contact p {
+        font-size: 12px;
+    }
+
+    .footer_top {
+        padding: 15px 0;
+    }
+
+    .footer_bottom {
+        padding: 20px 10px;
+    }
+}
