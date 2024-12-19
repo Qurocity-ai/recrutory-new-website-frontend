@@ -1,0 +1,95 @@
+.jobListingContainer {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  font-family: "Arial", sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: #00046c;
+  margin-bottom: 1.5rem;
+}
+
+.jobGrid {
+  margin: auto 3rem;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.jobLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.jobCard {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.jobCard:hover {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.jobHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.jobHeader h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #00046c;
+  margin-bottom: 7px;
+  margin-top: -0.5rem;
+}
+
+.company {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.jobDetails{
+  margin-top: 1rem;
+}
+.jobDetails p {
+  display: flex;
+  align-items: center;
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.jobDetails p svg {
+  margin-right: 0.5rem;
+  color: #00046c;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.footer svg {
+  margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .jobGrid {
+    grid-template-columns: 1fr;
+  }
+}

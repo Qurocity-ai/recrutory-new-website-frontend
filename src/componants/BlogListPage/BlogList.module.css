@@ -1,0 +1,180 @@
+/* General Styles */
+.envelope{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.envelope h1{
+    font-size: 2.8rem;
+    color: #073362;
+    letter-spacing: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+.blogsContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive Blog Grid */
+.blogGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+    gap: 50px;
+}
+
+/* Blog Card Styling */
+.blogCard {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.blogCard:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Blog Image */
+.blogImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Blog Titles */
+.blogTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin: 1rem 0 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Blog Date */
+.blogDate {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Blog Summary */
+.blogSummary {
+    font-size: 16px;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Read More Button */
+.readMore {
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: 700;
+    color: rgb(108, 107, 107);
+    font-family: "Poppins", sans-serif;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pageButton {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.pageButton:hover {
+    background-color: #0056b3;
+}
+
+.activePage {
+    background-color: #0056b3;
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small tablets and large phones (landscape) */
+@media (max-width: 1024px) {
+    .blogGrid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+        gap: 30px;
+    }
+
+    .blogTitle {
+        font-size: 16px;
+    }
+
+    .blogSummary {
+        font-size: 14px;
+    }
+}
+
+/* For mobile screens (portrait) */
+@media (max-width: 768px) {
+    .blogGrid {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+        gap: 20px;
+    }
+
+    .envelope h1 {
+        font-size: 2rem; /* Reduce title size for mobile */
+    }
+
+    .blogTitle {
+        font-size: 18px;
+    }
+
+    .blogSummary {
+        font-size: 14px;
+    }
+
+    .blogCard {
+        padding: 10px;
+    }
+
+    .blogImage {
+        height: 150px; /* Adjust image height for smaller screens */
+    }
+
+    .readMore {
+        font-size: 14px;
+    }
+
+    .pageButton {
+        padding: 6px 10px;
+    }
+}
+
+/* For very small screens (mobile portrait) */
+@media (max-width: 480px) {
+    .envelope h1 {
+        font-size: 1.8rem; /* Further reduce title size */
+    }
+
+    .blogTitle {
+        font-size: 16px;
+    }
+
+    .blogSummary {
+        font-size: 13px;
+    }
+
+    .readMore {
+        font-size: 12px;
+    }
+}
