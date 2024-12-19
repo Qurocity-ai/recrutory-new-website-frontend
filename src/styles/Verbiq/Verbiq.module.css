@@ -1,0 +1,149 @@
+.Verbiq_Hero {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.Verbiq_Hero img {
+    width: 50rem;
+    height: auto;
+    border-radius: 10px;
+    /* margin-bottom: 8rem; */
+    /* Add spacing below the image */
+}
+
+.Verbiq_Hero h1 {
+    font-weight: bold;
+    /* color: #02495E; */
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+}
+
+.Verbiq_Hero .description p {
+    width: 80%;
+    margin: 1rem auto;
+    line-height: 1.6;
+    text-align: center;
+    word-wrap: break-word;
+    /* color: #02495E; */
+    color: black;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+/* .textcontet{
+    margin-bottom: 4rem;
+} */
+
+/* introduction  */
+.intro{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+    gap: 5rem;
+    /* flex-wrap: wrap; */
+    margin-top: 8rem;
+    
+}
+.intro .right{
+    width: 60%;
+    /* border: 2px solid red; */
+    
+}
+.intro .left{
+    width: 50%;
+    /* border: 2px solid red; */
+}
+.intro .right iframe{
+    width: 100%;
+    height: 320px;
+    border-radius: 10px;
+}
+.intro .left h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    /* color: #02495E; */
+    color: black;
+    text-align: justify;
+    /* letter-spacing: 1px; */
+    font-family: "Poppins", sans-serif;
+}
+
+@media (max-width:768px) {
+   .intro{
+    flex-direction: column;
+   } 
+   .intro .right iframe {
+       width: 320px;
+       height: 320px;
+       border-radius: 10px;
+   }
+ 
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .Verbiq_Hero img {
+        width: 40rem;
+        /* Reduce image size for tablets */
+    }
+
+    .Verbiq_Hero h1 {
+        font-size: 1.4rem;
+        /* Slightly smaller font size */
+    }
+
+    .Verbiq_Hero .description p {
+        width: 70%;
+        /* Increase width for better readability */
+    }
+}
+
+@media (max-width: 768px) {
+    .Verbiq_Hero img {
+        width: 30rem;
+        /* Smaller image size for mobile screens */
+    }
+
+    .Verbiq_Hero h1 {
+        font-size: 1.3rem;
+        /* Reduce font size for mobile */
+    }
+
+    .Verbiq_Hero .description p {
+        width: 80%;
+        /* Adjust width for mobile */
+        font-size: 0.85rem;
+        /* Slightly smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .Verbiq_Hero img {
+        width: 20rem;
+        /* Further reduce image size for small mobile screens */
+    }
+
+    .Verbiq_Hero h1 {
+        font-size: 1.2rem;
+        /* Smallest font size */
+    }
+
+    .Verbiq_Hero .description p {
+        width: 90%;
+        /* Full width for very small screens */
+        font-size: 0.8rem;
+        /* Smallest font size */
+    }
+}

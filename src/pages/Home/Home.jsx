@@ -13,7 +13,7 @@ function Home() {
       <MainSection/>
       <Testimonial/>
       {/* <Scroll/> */}
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }

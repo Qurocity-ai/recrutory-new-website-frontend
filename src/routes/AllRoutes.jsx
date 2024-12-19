@@ -5,6 +5,11 @@ import JobListing from '../componants/JobListing/JobListing'
 import JobDetails from '../componants/JobDetails/JobDetails'
 import BlogListPage from '../componants/BlogListPage/BlogListPage'
 import BlogDetailPage from '../componants/BlogDetailPage/BlogDetailPage'
+import Blog from '../pages/Blog/Blog'
+import Verbiq from '../pages/Verbiq/Verbiq'
+import GlobalInsight from '../pages/GlobalInsight/GlobalInsight'
+import Trends from '../pages/Trends/Trends'
+import Industries from '../pages/Industries/Industries'
 
 function AllRoutes() {
   return (
@@ -18,6 +23,11 @@ function AllRoutes() {
          <Route path='/blogs/:id' element={<BlogDetailPage />} />
          <Route path='/blogs' element={<BlogListPage />} />
 
+         <Route  path='/blogs' element={<Blog/>}/>
+         <Route path='/product' element={<Verbiq/>}/>
+        <Route path='/globalinsights' element={<GlobalInsight/>}/>
+          <Route path="/trends" element={<Trends />} />
+          <Route path="/industries" element={<Industries />} />
       </Routes>
     </div>
   )

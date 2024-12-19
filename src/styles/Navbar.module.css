@@ -5,46 +5,40 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #02465B;
+    color: black;
     width: 100%;
+    background-image: url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png");
 }
 
 .navbar_brand {
-    padding: 0.5rem
-}
-.navbar_brand ,img{
-    margin-left: 0.5rem;
+    padding: 0.5rem;
 }
 
 .navbar_links {
     display: flex;
     gap: 40px;
+    font-weight: bold;
     text-align: center;
     justify-content: center;
     padding: 2%;
     transition: max-height 0.3s ease-in-out;
 }
+
 .navbar_links a.active {
-    /* Matches hover color */
     font-weight: bold;
-    border-bottom: 2px solid #FF6F61;
-    /* Underline effect */
     transform: scale(1.1);
-    /* Optional: match hover effect */
 }
+
 .navbar_links a {
-    color: #02465B;
+    color: black;
     text-decoration: none;
-    transition: color 0.3s ease,transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
-.navbar_links a:hover{
+
+.navbar_links a:hover {
     color: #FF6F61;
-        transform: scale(1.1);
-}
-.navbar_links img {
-    height: 20px;
+    transform: scale(1.1);
 }
 
 .navbar_toggle {
@@ -55,6 +49,40 @@
     cursor: pointer;
 }
 
+.navbar_dropdown {
+    position: relative;
+}
+
+.dropdown_toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-image: url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png");
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    z-index: 10;
+}
+
+.submenu.open {
+    display: block;
+}
+
+.submenu a {
+    display: block;
+    padding: 0.5rem 0;
+    color: #333;
+}
+
 @media (max-width: 768px) {
     .navbar_links {
         flex-direction: column;
@@ -62,18 +90,25 @@
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #ffffff;
+        background-image: url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png");
         overflow: hidden;
         max-height: 0;
     }
 
     .navbar_links.open {
         max-height: 200px;
-        /* Adjust as needed */
+        transition: max-height 0.3s ease-in-out;
     }
 
     .navbar_toggle {
         display: block;
     }
-}
 
+    .submenu {
+        position: static;
+    }
+
+    .submenu.open {
+        display: block;
+    }
+}

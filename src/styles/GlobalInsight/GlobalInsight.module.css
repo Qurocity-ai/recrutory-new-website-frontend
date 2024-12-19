@@ -1,0 +1,108 @@
+.main_hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    /* Add padding for spacing */
+    /* background-image: url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png"); */
+    /* background-color: red; */
+}
+
+.main_hero h2 {
+    font-weight: bold;
+    /* color: #02495E; */
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    /* Slightly larger for better readability */
+    text-align: center;
+    /* Ensure the heading is centered */
+}
+
+.main_hero p {
+    width: 90%;
+    /* Make it more flexible for small screens */
+    margin: 1rem auto;
+    line-height: 1.6;
+    text-align: center;
+    /* color: #02495E; */
+    color: black;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    /* Adjust for readability */
+}
+
+
+.viewMap {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png"); */
+}
+
+.viewMap img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* For Large Screens */
+@media (max-width: 1200px) {
+    .viewMap {
+        height: 60vh;
+        /* Responsive height */
+    }
+}
+
+/* For Medium Screens */
+@media (max-width: 768px) {
+    .viewMap {
+        height: 50vh;
+        /* Responsive height */
+    }
+}
+
+/* For Small Screens */
+@media (max-width: 480px) {
+    .viewMap {
+        height: 40vh;
+        /* Smaller height on small devices */
+    }
+
+    .viewMap img {
+        object-fit: contain;
+        /* Maintain aspect ratio on small screens */
+    }
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main_hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .main_hero p {
+        width: 95%;
+        font-size: 0.95rem;
+       
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main_hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .main_hero p {
+        width: 100%;
+        font-size: 0.85rem;
+        
+    }
+}

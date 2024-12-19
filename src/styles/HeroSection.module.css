@@ -4,7 +4,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #4198B2;
+    /* color: #02495E; */
+    color: black;
     /* border: 3px solid goldenrod; */
 
 }
@@ -21,14 +22,17 @@
 
 .line {
     border: none;
-    border-top: 4px solid #4198B2;
+    /* border-top: 4px solid #4198B2; */
+        border-top: 4px solid black;
     width: 100%;
 }
 
 .hero_content p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 0.5rem;
-    color: #4198B2;
+    /* color: #02495E; */
+    color: black;
+    font-family: "Poppins", sans-serif;
     
     
 }
@@ -43,8 +47,8 @@
     font-size: 2rem;
     font-weight: bold;
     display: inline-block;
-    background: linear-gradient(90deg, #4198b2, #ff7f50, #32cd32, #1e90ff);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    color: black;
 }

@@ -1,0 +1,71 @@
+/* Container for the card layout */
+.benefit-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Automatically adjust columns based on available space */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* Space between cards */
+    text-align: center;
+    padding: 1rem;
+    /* Padding inside container */
+    margin-top: 5rem;
+    /* Spacing from the top */
+}
+
+/* Card styling */
+.benefit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center content horizontally */
+    justify-content: center;
+    /* Center content vertically */
+    height: auto;
+    /* Adjust height based on content */
+    padding: 1rem;
+    /* Padding inside each card */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+/* Image inside the card */
+.benefit-card img {
+    max-width: 150px;
+    /* Restrict image size */
+    max-height: 150px;
+    margin-bottom: 0.5rem;
+    /* Space below the image */
+}
+
+/* Heading styling */
+.benefit-card h3 {
+    /* color: #02495E; */
+    color: black;
+    margin-top: 1rem;
+    /* Adjust space between image and heading */
+    font-size: 1.2rem;
+    /* Set font size */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .benefit-container {
+        grid-template-columns: 1fr;
+        /* Stack cards into one column */
+    }
+
+    /* Adjust image size for smaller screens */
+    .benefit-card img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    /* Adjust heading font size for mobile screens */
+    .benefit-card h3 {
+        font-size: 1rem;
+    }
+}

@@ -1,17 +1,19 @@
 .main {
     width: 100%;
     display: flex;
-    color: #4198B2;
+    /* color: #02495E; */
+    color: black;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     /* margin-top: 0.5rem; */
     /* border: 3px solid gold; */
+    /* font-family: "Poppins", sans-serif; */
 }
 
 .left {
     width: 40%;
-    columns: #4198B2;
+    
     
     
 }
@@ -26,15 +28,16 @@
 .register_btn {
     background-color: #AE191B;
     border-radius: 30px;
-    color: white;
+    color: black;
     width: 250px;
     height: 60px;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     gap: 20px;
+    font-family: "Poppins", sans-serif;
 }
 
 .register_btn:hover {
@@ -42,7 +45,8 @@
 }
 .left p{
     font-size: 1.1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Poppins", sans-serif;
     text-align: justify;
 }
 /* Media Query for Mobile Devices */
@@ -79,7 +83,7 @@
 
     .left p {
         font-size: 1rem;
-        color: #4198B2;
+        
     }
 
     .register_btn {
