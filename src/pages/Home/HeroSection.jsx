@@ -8,7 +8,7 @@ function HeroSection() {
             <section className={HeroStyle.hero_section}>
                 <div className={HeroStyle.hero_content}>
                     <h2 className={HeroStyle.gradient_text}>
-                        <TypeAnimation
+                        {/* <TypeAnimation
                             sequence={[
                                 "Your Trusted Recruitment Partner",
                                 2000, // Delay for 2 seconds
@@ -22,7 +22,8 @@ function HeroSection() {
                             wrapper="span"
                             repeat={Infinity} // Loop the animation
                             style={{ display: "inline-block" }}
-                        />
+                        /> */}
+                        Your Trusted Recruitment Partner
                     </h2>
                     <hr className={HeroStyle.line}/>
                     <p>Find the right opportunity. Faster placements, better hires.</p>

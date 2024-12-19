@@ -1,0 +1,68 @@
+.features_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two-column layout */
+    gap: 2rem;
+    /* Space between items */
+    /* padding: 2rem; */
+    /* Gradient background */
+    /* color: #02495E; */
+    color: black;
+    margin-top: 5rem;
+}
+
+/* Feature Item Styles */
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    height: auto;
+    
+}
+
+/* Text Styles */
+.feature h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+}
+
+.feature p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Image Styles */
+.feature_image img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+.feature_image{
+    margin-top: 3rem;
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .features_container {
+        grid-template-columns: 1fr;
+        /* Single column on small screens */
+    }
+}
