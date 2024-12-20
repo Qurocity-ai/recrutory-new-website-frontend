@@ -11,7 +11,7 @@
 
 .card {
     max-width: 400px;
-    max-height: 300px;
+    max-height: 350;
     /* height: 280px; */
     padding: 1.5rem;
     margin: 0 0.5rem;
@@ -48,8 +48,8 @@
 .feedback p {
     font-size: 1rem;
     text-align: justify;
-    /* color: #02495E; */
-    color: black;
+    color: #02495E;
+    /* color: black; */
     font-family: "Poppins", sans-serif;
     /* letter-spacing: 0.5px; */
          
@@ -57,17 +57,19 @@
 }
 .feedback hr{
     border: none;
-        /* background-color: #02586F; */
-        background-color: black;
+        background-color: #02586F;
+        /* background-color: black; */
         height: 0.2rem;
         border-radius: 5px;
 }
 
 .feedback h4 {
-    /* color: #02495E; */
-    color: black;
+    color: #02495E;
+    /* color: black; */
     text-align: center;
     font-family: "Poppins", sans-serif;
+    
+    
 }
 
 @media screen and (max-width: 768px) {

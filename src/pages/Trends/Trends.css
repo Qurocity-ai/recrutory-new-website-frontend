@@ -1,0 +1,160 @@
+
+
+/* Insight Section */
+.insight {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin:  5rem 3rem 8rem;
+    
+}
+
+/* Left Section */
+.ins-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    /* border: 1px solid red; */
+}
+
+.left-ins-img {
+    width: 80%;
+    border-radius: 10px;
+    height: 550px;
+}
+
+.left-ins-img h1 {
+    margin: 10px;
+    color: rgb(230, 225, 225);
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.left-ins-content {
+    margin-top: 1rem;
+    width: 80%;
+    text-align: right;
+    align-items: left;
+}
+
+.left-ins-content ul {
+    padding: 0;
+    list-style: none;
+    margin: 2rem 0 0 0;
+    text-align: left;
+}
+
+.left-ins-content ul li {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.percentage {
+    color: #b0181b;
+    font-size: 1.5rem;
+}
+
+/* Right Section */
+.ins-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-ins-content {
+    width: 100%;
+}
+
+.right-ins-content ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    text-align: left;
+}
+
+.right-ins-content ul li {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.right-ins-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.right-ins-img-1,
+.right-ins-img-2 {
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+}
+
+.right-ins-img-1 img,
+.right-ins-img-2 img {
+    width: 100%;
+   
+}
+
+.right-ins-img-1 h1,
+.right-ins-img-2 h1 {
+    margin: 10px;
+    color: rgb(230, 225, 225);
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+
+/* Static Content Section */
+.ins-static-content {
+    background-color: black;
+    border-radius: 5px;
+    padding: 1rem;
+    color: white;
+    margin-top: 2rem;
+    height: 250px;
+}
+
+.content-item {
+    margin-bottom: 1rem;
+}
+
+.content-item h2 {
+    text-decoration: underline;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.content-item p {
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .insight {
+        margin: 1rem;
+    }
+
+    .left-ins-content ul li,
+    .right-ins-content ul li {
+        font-size: 1rem;
+    }
+
+    .percentage {
+        font-size: 1.2rem;
+    }
+
+    .content-item h2 {
+        font-size: 0.8rem;
+    }
+
+    .content-item p {
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,97 @@
+.industries {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 5rem;
+}
+
+.industries h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+}
+
+.grid-container {
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Default to 3 columns */
+    gap: 1.5rem;
+    max-width: 1200px;
+    padding: 1rem;
+}
+
+/* Item Styles */
+.grid-item {
+    padding: 20px;
+    border: 2px solid #0d5265;
+    background-color: #ffffff;
+    color: #0d5265;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+.grid-item:nth-child(2n) {
+    background-color: #0d5265;
+    color: #ffffff;
+}
+
+.grid-item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid-item:nth-child(6) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on tablet */
+    }
+
+    .grid-item {
+        font-size: 1.1rem;
+        /* Slightly larger text for tablets */
+    }
+}
+
+/* Medium Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* 1 column on smaller screens */
+    }
+
+    .grid-item {
+        font-size: 1rem;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+/* Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Single column on mobile screens */
+    }
+
+    .grid-item {
+        font-size: 0.9rem;
+        /* Slightly smaller font size on mobile */
+    }
+}

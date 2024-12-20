@@ -6,6 +6,7 @@ import Footer from '../../componants/Footer'
 import Testimonial from './Testimonial'
 import Scroll from '../../componants/scroll'
 import JobListing from '../../componants/JobListing/JobListing'
+import RunningText from '../../componants/RunningText'
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <MainSection/>
       <JobListing/>
       <Testimonial/>
+      <RunningText/>
       {/* <Scroll/> */}
       {/* <Footer/> */}
     </div>

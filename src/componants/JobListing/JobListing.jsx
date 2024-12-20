@@ -50,9 +50,12 @@
                       <FaRupeeSign /> ₹ {job.CTC.toLocaleString()}
                     </p>
                   </div>
-                  <div className={jobs.footer}>
-                    <FaClock /> Posted {job.dateposted || "Recently"}
-                  </div>
+                 <div className={jobs.bottome}>
+                    <div className={jobs.footer}>
+                      <FaClock /> Posted {job.dateposted || "Recently"}
+                    </div>
+                    <p>view Details</p>
+                 </div>
                 </div>
               </Link>
             ))

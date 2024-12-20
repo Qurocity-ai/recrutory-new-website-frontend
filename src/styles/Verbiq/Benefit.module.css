@@ -10,8 +10,9 @@
     text-align: center;
     padding: 1rem;
     /* Padding inside container */
-    margin-top: 5rem;
+    margin: 10rem auto 8rem;
     /* Spacing from the top */
+   
 }
 
 /* Card styling */
@@ -43,8 +44,8 @@
 
 /* Heading styling */
 .benefit-card h3 {
-    /* color: #02495E; */
-    color: black;
+    color: #02495E;
+    /* color: black; */
     margin-top: 1rem;
     /* Adjust space between image and heading */
     font-size: 1.2rem;

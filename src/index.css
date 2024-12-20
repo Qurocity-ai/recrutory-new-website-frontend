@@ -1,6 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-image: url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png");
+  font-family: "Poppins", sans-serif;
+  /* background-image: url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png"); */
 }
 

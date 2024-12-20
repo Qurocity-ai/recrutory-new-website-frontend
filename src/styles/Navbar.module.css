@@ -6,9 +6,10 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: black;
+    color: #02495E;
     width: 100%;
-    background-image: url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png");
+    background-color: white;
+    /* background-image: url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png"); */
 }
 
 .navbar_brand {
@@ -31,7 +32,8 @@
 }
 
 .navbar_links a {
-    color: black;
+    /* color: black; */
+    color: #02495E;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
 }

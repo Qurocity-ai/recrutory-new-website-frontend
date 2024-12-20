@@ -1,11 +1,13 @@
 .jobListingContainer {
   padding: 2rem;
-  font-family: "Arial", sans-serif;
+  margin: 5rem auto 8rem;
 }
 
 .title {
   text-align: center;
-  color: #00046c;
+  /* color: #00046c; */
+  font-family: "Poppins", sans-serif;
+  color: #02495E;
   margin-bottom: 1.5rem;
 }
 
@@ -24,7 +26,7 @@
 }
 
 .jobCard {
-  /* background: #fff; */
+  background: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -34,7 +36,8 @@
 }
 
 .jobCard:hover {
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
 }
 
 .jobHeader {
@@ -47,10 +50,13 @@
 
 .jobHeader h2 {
   font-size: 1.25rem;
-  font-weight: bold;
-  color: #00046c;
+  /* font-weight: bold; */
+  /* color: #00046c; */
+  color: rgb(42, 42, 42);
   margin-bottom: 7px;
   margin-top: -0.5rem;
+  font-family: "Poppins", sans-serif;
+
 }
 
 .company {
@@ -59,7 +65,7 @@
 }
 
 .jobDetails{
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .jobDetails p {
   display: flex;
@@ -67,19 +73,30 @@
   margin: 0.25rem 0;
   font-size: 0.9rem;
   color: #444;
+  font-family: "Poppins", sans-serif;
 }
 
 .jobDetails p svg {
   margin-right: 0.5rem;
-  color: #00046c;
+  /* color: #00046c; */
+  color: black;
 }
 
-.footer {
+.footer,.bottome {
   display: flex;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 0.7rem;
   font-size: 0.8rem;
   color: #666;
+}
+
+.bottome{
+  justify-content: space-between;
+}
+.bottome p{
+  font-family: "Poppins", sans-serif;
+  margin-bottom: -1px;
+  color: rgb(9, 9, 96);
 }
 
 .footer svg {

@@ -5,7 +5,7 @@ import Scroll from './scroll'
 function Footer() {
     return (
         <>
-        <RunningText/>
+       
       
             <div className={styles.footer}>
                 {/* Footer bootom */}

@@ -22,10 +22,10 @@ function Verbiq() {
       {/* Introduction of Product by video */}
       <div className={VerbiqStyle.intro}>
         <div className={VerbiqStyle.left}>
-          <h3>Assess and Elevate Your Language Proficiency with  <img src='src/assets/Verbiq/logo.png' style={{ width: "100px",marginTop:"5px",height:"40px" }} /> </h3>
 
-           
-          
+          <h3>Assess and Elevate Your Language Proficiency with <span><img src="/src/assets/Verbiq/logo.png" width="100px"
+            height="auto" /></span></h3>
+
         </div>
         <div className={VerbiqStyle.right}>
           <iframe

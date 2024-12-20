@@ -1,14 +1,15 @@
 .main {
     width: 100%;
     display: flex;
-    /* color: #02495E; */
-    color: black;
+   
+    /* color: black; */
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     /* margin-top: 0.5rem; */
     /* border: 3px solid gold; */
-    /* font-family: "Poppins", sans-serif; */
+    font-family: "Poppins", sans-serif;
+    color: #02495E;
 }
 
 .left {
@@ -28,7 +29,7 @@
 .register_btn {
     background-color: #AE191B;
     border-radius: 30px;
-    color: black;
+    color:white;
     width: 250px;
     height: 60px;
     border: none;

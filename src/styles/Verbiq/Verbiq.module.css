@@ -20,8 +20,8 @@
 
 .Verbiq_Hero h1 {
     font-weight: bold;
-    /* color: #02495E; */
-    color: black;
+    color: #02495E;
+    /* color: black; */
     font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
 }
@@ -32,8 +32,8 @@
     line-height: 1.6;
     text-align: center;
     word-wrap: break-word;
-    /* color: #02495E; */
-    color: black;
+    color: #02495E;
+    /* color: black; */
     font-family: "Poppins", sans-serif;
     letter-spacing: 1px;
     font-size: 0.9rem;
@@ -63,6 +63,7 @@
 .intro .left{
     width: 50%;
     /* border: 2px solid red; */
+    
 }
 .intro .right iframe{
     width: 100%;
@@ -72,11 +73,12 @@
 .intro .left h3{
     font-size: 1.3rem;
     font-weight: bold;
-    /* color: #02495E; */
-    color: black;
+    color: #02495E;
+    /* color: black; */
     text-align: justify;
     /* letter-spacing: 1px; */
     font-family: "Poppins", sans-serif;
+    line-height: 2.5rem;
 }
 
 @media (max-width:768px) {

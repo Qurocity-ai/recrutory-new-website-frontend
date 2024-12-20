@@ -5,7 +5,7 @@
     align-items: center;
     text-align: center;
     /* color: #02495E; */
-    color: black;
+    /* color: black; */
     /* border: 3px solid goldenrod; */
 
 }
@@ -44,11 +44,12 @@
 }
 
 .gradient_text {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     display: inline-block;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     color: black;
+    font-family: "Poppins", sans-serif;
 }
