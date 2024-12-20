@@ -11,6 +11,7 @@ const JobDetails = () => {
 
   // Fetch job details
   useEffect(() => {
+    window.scrollTo(0, 0);
     const fetchJob = async () => {
       try {
         const response = await fetch(`${config.apiUrl}/api/jobs/${id}`);
@@ -39,68 +40,74 @@ const JobDetails = () => {
   };
 
   return (
-    <div className={styles.container}>
-      {job ? (
-        <div className={styles.card}>
-          <h1 className={styles.title}>{job.JobTitle}</h1>
-          <p className={styles.company}>{job.Company}</p>
+    <div>
+      <div className={styles.container}>
+        {job ? (
+          <div className={styles.card}>
+            <h1 className={styles.title}>{job.JobTitle}</h1>
+            <p className={styles.company}>{job.Company}</p>
 
-          <div className={styles.details}>
-            <p>
-              <strong>Location:</strong> {job.Location}
-            </p>
-            <p>
-              <strong>Experience:</strong> {job.Experience} | {"  "}
-              <strong>CTC:</strong> {job.CTC} | {"  "}
-              <strong>Valid Till:</strong> {job.validitydate}
-            </p>
-            <p>
-              <strong>Date Posted:</strong>{"  "}
-              {job.dateposted || "Not Available"}
-            </p>
-          </div>
+            <div className={styles.details}>
+              <p>
+                <strong>Location:</strong> {job.Location}
+              </p>
+              <p>
+                <strong>Experience:</strong> {job.Experience} &nbsp;| &nbsp;
+                <strong>CTC:</strong> {job.CTC} &nbsp;| &nbsp;
+                <strong>Valid Till:</strong> {job.validitydate}
+              </p>
+              <p>
+                <strong>Date Posted:</strong>&nbsp;
+                {job.dateposted || "Not Available"}
+              </p>
+            </div>
 
-          <hr />
-
-          <h2>Qualifications</h2>
-          <ul className={styles.bulletList}>
-            {job.qualification.split(". ").map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-
-          <h2>Description</h2>
-          <ul className={styles.bulletList}>
-            {job.description.split(". ").map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-
-          <h2>Expectations</h2>
-          <ul className={styles.bulletList}>
-            {job.expectations.split(". ").map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-
-          {/* Apply Button */}
-          <div className={styles.applyContainer}>
-            <button className={styles.applyButton} onClick={handleApplyClick}>
-              Apply Now
-            </button>
-          </div>
-
-          {/* Popup Form */}
-          {showPopup && (
-            <PopupApplyForm
-              jobId={id} // Pass the jobId to the PopupApplyForm
-              onClose={closePopup} // Pass close handler to close the popup
+            <hr
+              style={{
+                marginBottom: "1.9rem",
+              }}
             />
-          )}
-        </div>
-      ) : (
-        <p className={styles.loading}>Loading job details...</p>
-      )}
+
+            <h2>Qualifications</h2>
+            <ul className={styles.bulletList}>
+              {job.qualification.split(". ").map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+
+            <h2>Description</h2>
+            <ul className={styles.bulletList}>
+              {job.description.split(". ").map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+
+            <h2>Expectations</h2>
+            <ul className={styles.bulletList}>
+              {job.expectations.split(". ").map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+
+            {/* Apply Button */}
+            <div className={styles.applyContainer}>
+              <button className={styles.applyButton} onClick={handleApplyClick}>
+                Apply Now
+              </button>
+            </div>
+
+            {/* Popup Form */}
+            {showPopup && (
+              <PopupApplyForm
+                jobId={id} // Pass the jobId to the PopupApplyForm
+                onClose={closePopup} // Pass close handler to close the popup
+              />
+            )}
+          </div>
+        ) : (
+          <p className={styles.loading}>Loading job details...</p>
+        )}
+      </div>
     </div>
   );
 };
