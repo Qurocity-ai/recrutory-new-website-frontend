@@ -21,11 +21,11 @@ function AllRoutes() {
          <Route path='/jobs/:id' element={<JobDetails />} />
          <Route path='/blogs/:id' element={<BlogDetailPage />} />
          <Route path='/blogs' element={<BlogListPage />} />
-
          <Route path='/product' element={<Verbiq/>}/>
-        <Route path='/globalinsights' element={<GlobalInsight/>}/>
+         <Route path='/globalinsights' element={<GlobalInsight/>}/>
           <Route path="/trends" element={<Trends />} />
           <Route path="/industries" element={<Industries />} />
+          
       </Routes>
     </div>
   )

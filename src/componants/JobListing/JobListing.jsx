@@ -54,7 +54,7 @@
                     <div className={jobs.footer}>
                       <FaClock /> Posted {job.dateposted || "Recently"}
                     </div>
-                    <p>view Details</p>
+                    <p>View Details</p>
                  </div>
                 </div>
               </Link>

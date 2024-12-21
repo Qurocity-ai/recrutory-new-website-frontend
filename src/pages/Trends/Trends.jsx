@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Trends.css";
 
 function Trends() {
+
+  useEffect(()=>{
+     window.scrollTo(0,0)
+  },[]);
+
+
   return (
     <div className="insight">
       {/* Left Section */}

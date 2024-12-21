@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import VerbiqStyle from "../../styles/Verbiq/Verbiq.module.css";
 import FeaturesSection from './FeaturesSection';
 import Benefit from './Benefit';
 import Assessment from './Assessment';
 import VerbiqTestimonial from './VerbiqTestimonial';
 function Verbiq() {
+
+    useEffect(()=>{
+       window.scrollTo(0,0)
+    },[]);
+
+
   return (
     <>
       <div className={VerbiqStyle.Verbiq_Hero}>

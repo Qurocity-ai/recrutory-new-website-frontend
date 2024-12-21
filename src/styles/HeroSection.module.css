@@ -22,16 +22,15 @@
 
 .line {
     border: none;
-    /* border-top: 4px solid #4198B2; */
-        border-top: 4px solid black;
+    border-top: 4px solid #02495E;
     width: 100%;
 }
 
 .hero_content p {
     font-size: 1.2rem;
     margin-top: 0.5rem;
-    /* color: #02495E; */
-    color: black;
+    color: #02495E;
+    /* color: black; */
     font-family: "Poppins", sans-serif;
     
     
@@ -50,6 +49,6 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    color: black;
+    color: #02495E;
     font-family: "Poppins", sans-serif;
 }

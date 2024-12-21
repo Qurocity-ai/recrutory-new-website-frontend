@@ -95,8 +95,9 @@
 }
 .bottome p{
   font-family: "Poppins", sans-serif;
-  margin-bottom: -1px;
-  color: rgb(9, 9, 96);
+  margin-bottom: -25px;
+  color: green;
+  
 }
 
 .footer svg {

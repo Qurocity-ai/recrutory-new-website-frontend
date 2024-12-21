@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import GlobalInsightStyle from "../../styles/GlobalInsight/GlobalInsight.module.css"
 import GlobalInsightView from './GlobalInsightView'
 
 
 function GlobalInsight() {
+
+    useEffect(()=>{
+       window.scrollTo(0,0)
+    },[]);
+
+
   return (
    <>
-
       <div style={{
         backgroundImage: `url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png")`,
         backgroundSize: 'cover', 

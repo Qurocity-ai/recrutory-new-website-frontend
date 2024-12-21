@@ -9,6 +9,7 @@ const BlogListPage = () => {
   const blogsPerPage = 9; 
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     fetch(`${config.apiUrl}/blog/blogs`)
       .then((response) => response.json())
       .then((data) => {

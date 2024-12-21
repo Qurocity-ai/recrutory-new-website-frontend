@@ -1,7 +1,6 @@
 /* Main Container */
 
 .container {
-  background-image: url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +25,8 @@
 /* Job Title */
 .title {
   font-size: 1.3rem;
-  color: #00046c;
+  /* color: #00046c; */
+  color: black;
   margin-bottom: 5px;
   font-family: "Poppins", sans-serif;
 }
@@ -54,7 +54,7 @@
 }
 
 .details strong {
-  color: #00046c;
+  color: black;
 }
 
 .card h2{
