@@ -8,7 +8,7 @@ function VerbiqTestimonial() {
                 <div className={styles.card_inner}>
                     <div className={styles.card_front}>
                         <h3>PURPOSE</h3>
-                        <img src='src/assets/Verbiq/1.png' alt="Purpose" />
+                        <img src='/assets/Verbiq/1.png' alt="Purpose" />
                         
                     </div>
                     <div className={styles.card_back}>
@@ -21,7 +21,7 @@ function VerbiqTestimonial() {
                 <div className={styles.card_inner}>
                     <div className={styles.card_front}>
                         <h3>CONSISTENCY</h3>
-                        <img src='src/assets/Verbiq/2.png' alt="Consistency" />
+                        <img src='/assets/Verbiq/2.png' alt="Consistency" />
                         
                     </div>
                     <div className={styles.card_back}>
@@ -34,7 +34,7 @@ function VerbiqTestimonial() {
                 <div className={styles.card_inner}>
                     <div className={styles.card_front}>
                         <h3>ACCESSIBILITY</h3>
-                        <img src='src/assets/Verbiq/3.png' alt="Accessibility" />
+                        <img src='/assets/Verbiq/3.png' alt="Accessibility" />
                         
                     </div>
                     <div className={styles.card_back}>
@@ -47,7 +47,7 @@ function VerbiqTestimonial() {
                 <div className={styles.card_inner}>
                     <div className={styles.card_front}>
                         <h3>REDUCED TIMELINE FOR HIRING</h3>
-                        <img src='src/assets/Verbiq/4.png' alt="Reduced Timeline for Hiring" />
+                        <img src='/assets/Verbiq/4.png' alt="Reduced Timeline for Hiring" />
                     </div>
                     <div className={styles.card_back}>
                         <p>"Stay ahead of linguistic recruitment trends while maintaining timeless hiring practices with . Our platform adapts to evolving language requirements while ensuring the timeless value of strong communication skills in your workforce."</p>

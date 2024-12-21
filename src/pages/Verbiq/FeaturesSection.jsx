@@ -16,8 +16,8 @@ const FeaturesSection = () => {
                 </div>
                 <div className={FetureStyle.feature_image}>
                     
-                    <img src="src/assets/Verbiq/Group 227.png" alt="Adaptive Testing" />
-                    <img src="src/assets/Verbiq/Group 228.png" alt="Reporting Insights" />
+                    <img src="/assets/Verbiq/Group 227.png" alt="Adaptive Testing" />
+                    <img src="/assets/Verbiq/Group 228.png" alt="Reporting Insights" />
                 </div>
 
                 <div className={FetureStyle.feature_text}>
@@ -41,12 +41,12 @@ const FeaturesSection = () => {
                 </div>
                 <div className={FetureStyle.feature_image}>
                     <img
-                        src="src/assets/Verbiq/Group 230.png"
+                        src="/assets/Verbiq/Group 230.png"
                         alt="Cultural Fit and Communication"
                     />
 
                     <img
-                        src="src/assets/Verbiq/Group 229.png"
+                        src="/assets/Verbiq/Group 229.png"
                         alt="Setting Candidates Apart"
                     />
                 </div>

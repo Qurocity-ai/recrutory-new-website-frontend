@@ -22,7 +22,7 @@ const Navbar = () => {
             <div className={Nav.navbar_brand}>
                 <Link to="/" onClick={closeMenu}>
                     <img
-                        src="src/assets/Recrutory Logo 2 (1).png"
+                        src="/assets/Recrutory Logo 2 (1).png"
                         alt="Logo"
                         style={{ width: "200px" }}
                     />
@@ -41,7 +41,7 @@ const Navbar = () => {
                     onClick={closeMenu}
                 >
                     <img
-                        src="src/assets/QuriocityProduct.png"
+                        src="/assets/QuriocityProduct.png"
                         alt="Product"
                         style={{ width: "80px", height: "auto" }}
                     />

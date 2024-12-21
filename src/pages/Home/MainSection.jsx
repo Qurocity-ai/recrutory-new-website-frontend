@@ -17,7 +17,8 @@ function MainSection() {
 
                 </div>
                 <div className={styles.right}>
-                    <img src='./src/assets/Group 514420.png' />
+                    {/* <img src='./src/assets/Group 514420.png' /> */}
+                    <img src='/assets/Group 514420.png' />
                 </div>
             </div>
 

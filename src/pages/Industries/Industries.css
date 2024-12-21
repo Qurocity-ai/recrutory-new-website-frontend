@@ -73,7 +73,7 @@
 }
 
 .box-2 {
-    background-image: url("src/assets/gi-1.png");
+    background-image: url("/assets/gi-1.png");
     background-size: cover;
         background-position: center;
         height: auto;
@@ -85,7 +85,7 @@
 }
 
 .box-3 {
-    background-image: url("src/assets/gi-2.png");
+    background-image: url("/assets/gi-2.png");
         background-size: cover;
             background-position: center;
             height: auto;
@@ -105,7 +105,7 @@
 }
 
 .box-6 {
-    background-image: url("src/assets/gi-3.png");
+    background-image: url("/assets/gi-3.png");
         background-size: cover;
             background-position: center;
             height: auto;
@@ -117,7 +117,7 @@
 }
 
 .box-7 {
-    background-image: url("src/assets/gi-4.png");
+    background-image: url("/assets/gi-4.png");
         background-size: cover;
             background-position: center;
             height: auto;
@@ -141,7 +141,7 @@
 }
 
 .box-10 {
-    background-image: url("src/assets/gi-5.png");
+    background-image: url("/assets/gi-5.png");
         background-size: cover;
             background-position: center;
             height: auto;
