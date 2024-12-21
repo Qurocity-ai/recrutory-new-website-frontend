@@ -19,6 +19,23 @@
     justify-content: center;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.5rem auto;
+}
+.card ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card ul li{
+    list-style: none;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+.card ul li span{
+    font-size: 1rem;
 }
 
 .card:first-child {
@@ -113,6 +130,10 @@
 
 .box-8 {
     background-color: #D7D6D4;
+}
+
+.box-8 ul li{
+    color: black;
 }
 
 .box-9 {
