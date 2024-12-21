@@ -12,8 +12,22 @@ function Industries() {
       <div>
 
         <ServeIndustries/>
+        <h2 style={{ textAlign: "center", marginTop: "5remrem" ,fontSize:"1.4rem" }}>Most Sought after Domains...</h2>
         <div className="container">
-          <div className="card box-1">1</div>
+          <div className="card box-1">
+            <h5> Localization Specialists:</h5>
+            <ul>
+              <li>Adapt digital content for global audiences.
+                Multilingual Tech Support:</li>
+            </ul>
+           
+         
+            Provide technical assistance in multiple languages.
+            Global Project Managers:
+            Coordinate international projects and teams.
+            Language Quality Analysts:
+            Ensure linguistic accuracy and cultural relevance in software and applications.
+          </div>
           <div className="card box-2">IT & Tech</div>
           <div className="card box-3">WFM</div>
           <div className="card box-4">Localization</div>
