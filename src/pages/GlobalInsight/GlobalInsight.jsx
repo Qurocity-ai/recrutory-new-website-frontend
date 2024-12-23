@@ -27,7 +27,7 @@ function GlobalInsight() {
           {/* Map */}
 
           <div className={GlobalInsightStyle.viewMap}>
-            <img src='src/assets/global-insights.png' />
+            <img src='/assets/global-insights.png' />
           </div>
 
         </div>

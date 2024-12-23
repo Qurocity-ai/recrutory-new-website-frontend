@@ -34,14 +34,14 @@ function Industries() {
                 <br />
                 <span className='head'>Language Quality Analysts:</span>
                 <br />
-                Ensure linguistic accuracy and cultural relevance in software and applications.
+                Ensure linguistic accuracy and cultural relevance in software and applications. 
               </li>
             </ul>
           </div>
           <div className="card box-2">IT & Tech</div>
           <div className="card box-3">WFM</div>
           <div className="card box-4">
-            <ul>
+          <ul>
               <li>
                 <span className='head'>Client Support:</span>
                 <br />
@@ -60,21 +60,21 @@ function Industries() {
                 <br />
                 <span className='head'>Cross-Cultural Trainers:</span>
                 <br />
-                Promoting understanding among diverse teams.
+                Promoting understanding among diverse teams. 
                 <br />
                 <br />
                 <span className='head'>Multilingual HR Managers:</span>
                 <br />
-                Nurturing a diverse workforce.
+                Nurturing a diverse workforce. 
               </li>
             </ul>
           </div>
           <div className="card box-5">
-            <ul>
+          <ul>
               <li>
                 <span className='head'>Medical Interpreters:</span>
                 <br />
-                Bridge language gaps between patients and healthcare providers.
+Bridge language gaps between patients and healthcare providers.
                 <br />
                 <br />
                 <span className='head'>Bilingual Healthcare Professionals:</span>
@@ -89,14 +89,14 @@ function Industries() {
                 <br />
                 <span className='head'>Telehealth Coordinators:</span>
                 <br />
-                Facilitate remote healthcare consultations and interpretive services.
+                Facilitate remote healthcare consultations and interpretive services. 
               </li>
             </ul>
           </div>
           <div className="card box-6">HEALTHCARE</div>
           <div className="card box-7">LEGAL</div>
           <div className="card box-8">
-            <ul>
+          <ul>
               <li>
                 <span className='head'> Legal Translators:</span>
                 <br />

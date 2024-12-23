@@ -15,7 +15,7 @@ function Trends() {
         <div
           className="left-ins-img"
           style={{
-            backgroundImage: "url('src/assets/ins1.png')",
+            backgroundImage: "url('/assets/ins1.png')",
             backgroundSize: "100% 100%",
             backgroundPosition: "center",
             display: "flex",
@@ -48,7 +48,7 @@ function Trends() {
           <div
             className="right-ins-img-1"
             style={{
-              backgroundImage: "url('src/assets/ins2.png')",
+              backgroundImage: "url('/assets/ins2.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               display: "flex",
@@ -62,7 +62,7 @@ function Trends() {
           <div
             className="right-ins-img-2"
             style={{
-              backgroundImage: "url('src/assets/ins3.png')",
+              backgroundImage: "url('/assets/ins3.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               display: "flex",

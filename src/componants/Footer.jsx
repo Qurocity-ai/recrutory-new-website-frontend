@@ -20,7 +20,7 @@ function Footer() {
                     <div className={styles.footer_links}>
                         <h4>Quick Links</h4>
                         <ul>
-                            <li><a href='#'>VerbiQ</a></li>
+                            <li><a href='/product'>VerbiQ</a></li>
                             <li><a href='#'>Blogs</a></li>
                             <li><a href='#'>Media & Press Release</a></li>
                         </ul>

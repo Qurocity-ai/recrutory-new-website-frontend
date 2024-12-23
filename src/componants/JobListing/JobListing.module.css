@@ -109,5 +109,6 @@
 @media (max-width: 768px) {
   .jobGrid {
     grid-template-columns: 1fr;
+    margin: auto 0.5rem;
   }
 }

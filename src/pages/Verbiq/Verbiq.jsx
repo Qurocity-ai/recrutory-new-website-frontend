@@ -14,7 +14,7 @@ function Verbiq() {
   return (
     <>
       <div className={VerbiqStyle.Verbiq_Hero}>
-        <img src='src/assets/Verbiq/logo.png' />
+        <img src='/assets/Verbiq/logo.png' />
         <div className={VerbiqStyle.textcontet}>
           <h1>Transforming Language Assessment:</h1>
           <h1>Empowering Global Communication and Cultural Fit</h1>
@@ -29,7 +29,7 @@ function Verbiq() {
       <div className={VerbiqStyle.intro}>
         <div className={VerbiqStyle.left}>
 
-          <h3>Assess and Elevate Your Language Proficiency with <span><img src="/src/assets/Verbiq/logo.png" width="100px"
+          <h3>Assess and Elevate Your Language Proficiency with <span><img src="/assets/Verbiq/logo.png" width="100px"
             height="auto" /></span></h3>
 
         </div>
