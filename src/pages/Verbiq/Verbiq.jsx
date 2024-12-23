@@ -46,6 +46,7 @@ function Verbiq() {
 {/*  */}
 
     <VerbiqTestimonial />
+
     <FeaturesSection/>
     <Assessment/>
     <Benefit/>

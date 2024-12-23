@@ -5,8 +5,6 @@ import Scroll from './scroll'
 function Footer() {
     return (
         <>
-       
-      
             <div className={styles.footer}>
                 {/* Footer bootom */}
                 <div className={styles.footer_bottom}>

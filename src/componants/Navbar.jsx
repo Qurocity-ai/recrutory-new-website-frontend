@@ -32,7 +32,9 @@ const Navbar = () => {
             <div
                 className={`${Nav.navbar_links} ${isMenuOpen ? `${Nav.open}` : ""}`}
             >
-                <Link to="/" className={getLinkClass("/")} onClick={closeMenu}>
+                <Link to="/" className={
+                    `${getLinkClass("/")} ${Nav.topper}`
+                } onClick={closeMenu}>
                     Home
                 </Link>
                 <Link

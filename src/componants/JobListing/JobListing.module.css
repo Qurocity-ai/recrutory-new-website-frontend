@@ -1,6 +1,7 @@
 .jobListingContainer {
-  padding: 2rem;
   margin: 5rem auto 8rem;
+  margin-left: 2.5rem;
+  margin-right: 2.8rem;
 }
 
 .title {

@@ -4,7 +4,6 @@
     font-family: 'Arial', sans-serif;
     /* border: 3px solid greenyellow; */
     font-family: "Poppins", sans-serif;
-   
 }
 
 
@@ -13,7 +12,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
-    padding: 1.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
     
     
 }

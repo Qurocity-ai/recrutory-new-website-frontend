@@ -1,5 +1,5 @@
 .features_container {
-    width: 100%;
+    /* width: 100%; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* Two-column layout */
@@ -11,6 +11,8 @@
     /* color: black; */
     margin-top: 5rem;
     font-family: "Poppins", sans-serif;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 /* Feature Item Styles */

@@ -1,3 +1,4 @@
+/* Container and card layout */
 .container {
     margin: 2rem auto;
     display: grid;
@@ -19,66 +20,16 @@
     justify-content: center;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem;
+    text-align: center;
+    overflow: hidden;
+    /* Prevent text overflow */
 }
 
-.card:first-child {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.card:nth-child(4) {
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-.card:nth-child(5) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.card:nth-child(8) {
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-.card:nth-child(9) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
+/* Card-specific styling */
 .box-1 {
     background-color: #01ADDF;
 }
-
-.box-2 {
-    background-image: url("src/assets/gi-1.png");
-    background-size: cover;
-        background-position: center;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-}
-
-.box-3 {
-    background-image: url("src/assets/gi-2.png");
-        background-size: cover;
-            background-position: center;
-            height: auto;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-}
-
 .box-4 {
     background-color: #AA3736;
 }
@@ -86,49 +37,79 @@
 .box-5 {
     background-color: #CDAC98;
 }
+.box-9 {
+    background-color: #389fbc;
+    color: white;
+}
+
+.box-1 ul,
+.box-4 ul,
+.box-5 ul,
+.box-9 ul,
+.box-8 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box-1 ul li,
+.box-4 ul li,
+.box-5 ul li,
+.box-9 ul li,
+.box-8 ul li {
+    list-style: none;
+    font-size: 0.8rem;
+    color: black;
+}
+
+.box-1 ul li span,
+.box-4 ul li span,
+.box-5 ul li span,
+.box-9 ul li span,
+.box-8 ul li span {
+    font-size: 1rem;
+}
+
+.box-2 {
+    background-image: url("src/assets/gi-1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.box-3 {
+    background-image: url("src/assets/gi-2.png");
+    background-size: cover;
+    background-position: center;
+}
 
 .box-6 {
     background-image: url("src/assets/gi-3.png");
-        background-size: cover;
-            background-position: center;
-            height: auto;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .box-7 {
     background-image: url("src/assets/gi-4.png");
-        background-size: cover;
-            background-position: center;
-            height: auto;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .box-8 {
     background-color: #D7D6D4;
-}
-
-.box-9 {
-    background-color: #13343D;
+    color: black;
 }
 
 .box-10 {
     background-image: url("src/assets/gi-5.png");
-        background-size: cover;
-            background-position: center;
-            height: auto;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Media Queries for Responsiveness */
@@ -150,19 +131,27 @@
     }
 
     .card {
-        height: 30vw;
+        height: auto;
         font-size: 1.2rem;
+        padding: 0.5rem;
+        margin-top: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .container {
         grid-template-columns: 1fr;
-        /* One column for mobile */
+        grid-template-rows: auto;
+        gap: 0.5rem;
     }
 
     .card {
-        height: 40vw;
+        height: auto;
         font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .card ul li {
+        font-size: 0.75rem;
     }
 }

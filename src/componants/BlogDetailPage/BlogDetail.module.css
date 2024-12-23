@@ -10,7 +10,7 @@
 
 /* Blog Title */
 .blogTitle {
-    font-size: 1.9rem; /* Large and bold for the main title */
+    font-size: 1.5rem; /* Large and bold for the main title */
     font-weight: bold;
     color: #00376b;
     margin-bottom: 10px;
@@ -19,7 +19,7 @@
 
 /* Blog Date */
 .blogDate {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #7a7a7a;
     text-align: center;
     margin-bottom: 20px;
@@ -36,7 +36,7 @@
 
 /* Main Content Area */
 .blogContent {
-    font-size: 1.1rem; /* Base font size for the content */
+    font-size: 0.8rem; /* Base font size for the content */
     line-height: 1.7;
     color: #333;
     padding: 0 20px;
@@ -51,13 +51,13 @@
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px;
-    line-height: 1.5;
+    line-height: 1.5rem;
 }
 
 .blogContent h1 { font-size: 2rem; }
 .blogContent h2 { font-size: 1.75rem; }
-.blogContent h3 { font-size: 1.5rem; }
-.blogContent h4 { font-size: 1.3rem; }
+.blogContent h3 { font-size: 1.2rem; }
+.blogContent h4 { font-size: 1rem; }
 
 /* Paragraphs */
 .blogContent p {
