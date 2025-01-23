@@ -21,6 +21,15 @@
   box-sizing: border-box;
   margin: 3rem auto;
 }
+.card h1{
+  font-size: 1.2rem;
+  font-weight: 250px;
+}
+.details span{
+  font: 0.9rem;
+  font-weight: bold;
+ 
+}
 
 /* Job Title */
 .title {

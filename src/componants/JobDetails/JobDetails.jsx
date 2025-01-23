@@ -44,22 +44,23 @@ const JobDetails = () => {
       <div className={styles.container}>
         {job ? (
           <div className={styles.card}>
-            <h1 className={styles.title}>{job.JobTitle}</h1>
+            <p className={styles.title}>{job.JobTitle}</p>
             <p className={styles.company}>{job.Company}</p>
 
             <div className={styles.details}>
               <p>
-                <strong>Location:</strong> {job.Location}
+                <span>Location:</span>{job.Location}
+                <br></br>
+                <span> Experience:</span> {job.Experience}
+                <br></br>
+                <span>CTC:</span>{job.CTC}
+                <br></br>
+                <span>Date Posted:  </span>
+                  {job.dateposted || "Not Available"}
+                  <br></br>
+                <span>Valid Till: </span> {job.validitydate}
               </p>
-              <p>
-                <strong>Experience:</strong> {job.Experience} &nbsp;| &nbsp;
-                <strong>CTC:</strong> {job.CTC} &nbsp;| &nbsp;
-                <strong>Valid Till:</strong> {job.validitydate}
-              </p>
-              <p>
-                <strong>Date Posted:</strong>&nbsp;
-                {job.dateposted || "Not Available"}
-              </p>
+              
             </div>
 
             <hr

@@ -7,6 +7,7 @@ import Testimonial from './Testimonial'
 import Scroll from '../../componants/scroll'
 import JobListing from '../../componants/JobListing/JobListing'
 import RunningText from '../../componants/RunningText'
+import StaticJobListing from '../../componants/JobListing/StaticJobListing'
 
 function Home() {
   
@@ -18,7 +19,8 @@ function Home() {
     <div>
       <HeroSection/>
       <MainSection/>
-      <JobListing/>
+      {/* <JobListing/> */}
+      <StaticJobListing/>
       <Testimonial/>
       <RunningText/>
       {/* <Scroll/> */}

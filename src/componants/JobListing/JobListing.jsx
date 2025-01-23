@@ -60,7 +60,7 @@
               </Link>
             ))
           ) : (
-            <p>No jobs available at the moment.</p>
+            <p></p>
           )}
         </div>
       </div>

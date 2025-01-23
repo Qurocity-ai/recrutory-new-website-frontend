@@ -1,0 +1,131 @@
+.mainsection {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 8rem;
+}
+
+.mainsection h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 24px;
+    color: #02495E;
+    margin-bottom: 20px;
+    margin-top: 3rem;
+}
+
+.jobTitle {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.mainsection h1 {
+    text-align: center;
+    /* color: #00046c; */
+    font-family: "Poppins", sans-serif;
+    color: #02495E;
+    margin-bottom: 1.5rem;
+}
+
+.jobGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns for desktop/laptop */
+    gap: 16px;
+    padding: 10px;
+}
+
+span {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+.jobCard {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.jobCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.jobCard h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.jobCard p {
+    font-size: 0.9rem;
+}
+
+.jobCard .company {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.jobCard .location,
+.jobCard .description,
+.jobCard .salary,
+.jobCard .date {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.jobCard .detailsLink {
+    display: flex;
+    color: #63A463;
+    text-decoration: none;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+
+
+}
+
+.jobCard .detailsLink:hover {
+    text-decoration: underline;
+}
+
+/* Media query for tablet and smaller screens */
+@media (max-width: 1024px) {
+    .jobGrid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns for tablets */
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .jobGrid {
+        grid-template-columns: 1fr;
+        /* 1 column for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .jobCard {
+        padding: 12px;
+    }
+
+    .mainsection h1 {
+        font-size: 20px;
+    }
+}

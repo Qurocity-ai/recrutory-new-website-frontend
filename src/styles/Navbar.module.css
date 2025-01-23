@@ -72,7 +72,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-image: url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png");
+    /* background-image: url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png"); */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 10;
     width: 100%;
@@ -95,11 +95,8 @@
         top: 100%;
         left: 0;
         right: 0;
-        background-image: url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png");
         overflow: hidden;
         max-height: 0;
-        width: 100%;
-        
     }
 
     .topper{
@@ -109,6 +106,8 @@
 
     .navbar_links.open {
         max-height: 300px;
+        width: 100%;
+        background-color: aliceblue;
         transition: max-height 0.3s ease-in-out;
     }
 
