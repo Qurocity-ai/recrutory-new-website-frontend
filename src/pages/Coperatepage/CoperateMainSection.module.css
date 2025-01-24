@@ -1,0 +1,143 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.5rem;
+    /* border: 3px solid gold; */
+    font-family: "Poppins", sans-serif;
+    color: #02495E;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* width: 100%; */
+
+}
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 42%;
+    /* border: 2px solid red; */
+}
+
+.right img {
+    max-width: 400px;
+}
+
+.left p {
+    font-size: 1rem;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+}
+
+.left h1 {
+    font-size: 1.5rem;
+}
+
+.gridContener {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.card_body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.8rem;
+    padding-top: 1.5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+}
+
+.img_contener img {
+    width: 80px;
+    height: 80px;
+}
+
+.card_body h3 {
+    color: #02495E;
+    text-decoration: underline;
+    line-height: 3px;
+    font-family: 1rem;
+}
+
+.card_body p {
+    color: #02495E;
+    text-align: left;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        /* margin-left: 2rem; */
+        justify-content: center;
+        overflow: hidden;
+
+    }
+
+    .gridContener {
+        grid-template-columns: 1fr;
+        /* One card per row on smaller screens */
+        gap: 1rem;
+    }
+    .card_body h3{
+        line-height: 5px;
+        font-size: 0.9rem;
+        
+    }
+
+
+    .right {
+        order: -1;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .left {
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .left h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .left h3 {
+        font-size: 1.2rem;
+        /* Adjust font size for sub-headings */
+    }
+
+    .left p {
+        font-size: 1rem;
+
+    }
+
+    .register_btn {
+        width: 150px;
+        /* Reduce button size */
+        height: 50px;
+        font-size: 0.9rem;
+    }
+
+    .right img {
+        width: 100%;
+        /* Ensure the image is responsive */
+        max-width: 300px;
+        /* Set a max-width for the image */
+        height: auto;
+
+    }
+}

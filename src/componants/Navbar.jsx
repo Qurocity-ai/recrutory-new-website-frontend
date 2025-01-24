@@ -35,7 +35,13 @@ const Navbar = () => {
                 <Link to="/" className={
                     `${getLinkClass("/")} ${Nav.topper}`
                 } onClick={closeMenu}>
-                    Home
+                    Jobseeker
+                </Link>
+
+                <Link to="/coperate" className={
+                    `${getLinkClass("/")} ${Nav.topper}`
+                } onClick={closeMenu}>
+                    Corporate
                 </Link>
                 <Link
                     to="/product"

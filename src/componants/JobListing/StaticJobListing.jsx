@@ -68,8 +68,8 @@ const jobData = [
         qualification: "Master's or Ph.D. required",
         experience: "Experience in content analysis or writing is a plus",
         shift: "27-30 hours/week (Flexible)",
-        salary: "Not specified",
-        perks: "Opportunity to work on cutting-edge AI evaluation",
+        salary: "Hourly basis",
+        perks: "Opportunity to work on cutting-edge AI evaluation                 ",
         duration: "1-3 months",
         applylink: "https://forms.gle/Y9KEg6pr9Eb9UJP58"
     },
@@ -82,7 +82,7 @@ const jobData = [
         qualification: "No prior experience required",
         experience: "Not required",
         shift: "25-35 hours/week (Mon - Fri), flexible timings",
-        salary: "Not specified",
+        salary: "Hourly basis",
         perks: "Work on improving search algorithms and user experience",
         duration: "2-3 months",
         applylink: "https://forms.gle/YG2RaMA95r5PV31L6"
@@ -138,7 +138,7 @@ function StaticJobListing() {
                         <p className="qualification"><span>Qualification: </span>{job.qualification}</p>
                         <p className="experience"><span>Experience:</span>{job.experience}</p>
                         <p className="shift"><span>Shift: </span>{job.shift}</p>
-                        <p className="salary"><span>Salary:</span>{job.salary}</p>
+                        <p className="salary"><span>Salary: </span>{job.salary}</p>
                         {job.perks && <p className="perks"><span>Perks:</span> {job.perks}</p>}
                         {job.relocation && <p className="relocation"><span>Relocation:</span> {job.relocation}</p>}
                         {job.date && <p className="date"><span>Date:</span> {job.date}</p>}
