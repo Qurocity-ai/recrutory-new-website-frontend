@@ -3,6 +3,7 @@ import styles from "./CandidateCard.module.css";
 
 const CandidateCard = () => {
     return (
+        <div className={styles.overall}>
         <div className={styles.card}>
             <span className={styles.title}>Tailored Candidate Screening</span>
             <hr></hr>
@@ -54,6 +55,7 @@ const CandidateCard = () => {
                 </ul>
             </div>
             </div>
+        </div>
         </div>
     );
 };

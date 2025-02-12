@@ -13,7 +13,7 @@ function GlobalInsight() {
   return (
    <>
       <div style={{
-        backgroundImage: `url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png")`,
+        // backgroundImage: `url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png")`,
         backgroundSize: 'cover', 
         backgroundPosition: 'center', 
         backgroundRepeat: 'no-repeat', 

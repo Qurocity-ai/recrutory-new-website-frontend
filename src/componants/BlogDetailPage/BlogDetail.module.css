@@ -1,11 +1,14 @@
 /* Container for the blog details */
+
 .singleBlogContainer {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f8fafc;
+    /* background-color: #f8fafc; */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 /* Blog Title */
@@ -15,8 +18,15 @@
     color: #00376b;
     margin-bottom: 10px;
     text-align: center;
+    
 }
-
+:global(span){
+    font-weight: normal;
+}
+:global(strong){
+    /* font-weight: normal; */
+    font-size: 0.9rem;
+}
 /* Blog Date */
 .blogDate {
     font-size: 0.8rem;
@@ -36,10 +46,12 @@
 
 /* Main Content Area */
 .blogContent {
-    font-size: 0.8rem; /* Base font size for the content */
+    font-size: 1rem; /* Base font size for the content */
     line-height: 1.7;
-    color: #333;
+    color: #333333;
     padding: 0 20px;
+    
+    font-family: 'Poppins' ,sans-serif;
 }
 
 /* Standardized headings */
@@ -48,7 +60,8 @@
 .blogContent h3, 
 .blogContent h4 {
     color: #00376b;
-    font-weight: bold;
+    font-weight: normal;
+   font-family: 'Poppins' ,sans-serif;
     margin-top: 20px;
     margin-bottom: 10px;
     line-height: 1.5rem;
@@ -59,11 +72,14 @@
 .blogContent h3 { font-size: 1.2rem; }
 .blogContent h4 { font-size: 1rem; }
 
+
 /* Paragraphs */
 .blogContent p {
     margin-bottom: 15px;
-    font-size: 1.1rem; /* Consistent paragraph font size */
+    font-size: 1rem; /* Consistent paragraph font size */
     line-height: 1.7;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 /* Lists */
@@ -73,12 +89,15 @@
     margin-bottom: 15px;
     font-size: 1.1rem; /* Consistent font size for lists */
     line-height: 1.7;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 /* List items */
 .blogContent li {
     margin-bottom: 10px;
     font-size: 1.1rem; /* Consistent font size for list items */
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Blockquote */
@@ -90,6 +109,7 @@
     font-style: italic;
     font-size: 1.1rem; /* Consistent font size for blockquotes */
     line-height: 1.7;
+    
 }
 
 /* Links */
@@ -118,7 +138,7 @@
 
 /* Optional background for the page */
 body {
-    background-color: #e8f0fa;
+    /* background-color: #e8f0fa; */
 }
 
 /* Responsiveness for smaller screens */

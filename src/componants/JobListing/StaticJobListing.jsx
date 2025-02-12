@@ -69,7 +69,7 @@ const jobData = [
         experience: "Experience in content analysis or writing is a plus",
         shift: "27-30 hours/week (Flexible)",
         salary: "Hourly basis",
-        perks: "Opportunity to work on cutting-edge AI evaluation                 ",
+        perks: "Opportunity to work on cutting-edge AI evaluation",
         duration: "1-3 months",
         applylink: "https://forms.gle/Y9KEg6pr9Eb9UJP58"
     },
