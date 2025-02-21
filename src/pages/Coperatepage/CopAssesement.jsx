@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "../Coperatepage/CopAssesement.module.css"
+import Industries from '../Industries/Industries'
 function CopAssesement() {
     return (
         <>
@@ -15,6 +16,7 @@ function CopAssesement() {
                 </div>
 
             </div>
+            <Industries/>
 
             <div className={styles.bottomSection}>
                 <div className={styles.leftSection}>

@@ -7,8 +7,8 @@
     /* border: 3px solid gold; */
     font-family: "Poppins", sans-serif;
     color: #02495E;
-   padding-left: 2rem;
-   padding-right: 1.5rem;
+   padding-left: 5rem;
+   padding-right: 5rem;
    /* width: 100%; */
    
 }
@@ -25,6 +25,7 @@
 .right {
     width: 42%;
     /* border: 2px solid red; */
+    margin-left: 50px;
 }
 .right img{
     max-width: 500px;

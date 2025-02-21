@@ -28,8 +28,7 @@ function Footer() {
                     <div className={styles.footer_contact}>
                         <h4>Address</h4>
                         <p>
-                            Corp. Off. No 11B, Floor 6, Tower A, Downtown City Vista, Fountain Road, Ashoka
-                            Nagar, Kharadi, Pune – 411014
+                        Corp. Off. No 16A, Floor 2, Tower A, Downtown City Vista, Fountain Road, Ashoka Nagar, Kharadi, Pune – 411014
                         </p>
                         <h4>Reach out on</h4>
                         <p>Email: hr@recrutory.com</p>

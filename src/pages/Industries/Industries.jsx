@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Industries.css';
-import ServeIndustries from './ServeIndustries';
+// import ServeIndustries from './ServeIndustries';
 function Industries() {
 
   useEffect(() => {
@@ -11,7 +11,7 @@ function Industries() {
     <>
       <div>
 
-        <ServeIndustries />
+        {/* <ServeIndustries /> */}
         <h2 style={{ textAlign: "center", marginTop: "5remrem", fontSize: "1.4rem" }}>Most Sought after Domains...</h2>
         <div className="container">
           <div className="card box-1">
