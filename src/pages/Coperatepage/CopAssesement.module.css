@@ -1,5 +1,6 @@
 .mainSection {
     margin-top: 5rem;
+    /* border: 1px solid red; */
 }
 
 .topSection {
@@ -7,6 +8,7 @@
     padding-left: 9rem;
     padding-right: 9rem;
     line-height: 6px;
+    
 }
 
 .topSection h4 {

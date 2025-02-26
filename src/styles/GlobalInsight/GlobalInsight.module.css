@@ -8,6 +8,10 @@
     /* Add padding for spacing */
     /* background-image: url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png"); */
     /* background-color: red; */
+
+    /* border: 1px solid red; */
+    padding-left: 9rem;
+    padding-right: 9rem;
 }
 
 .main_hero h2 {
@@ -19,6 +23,7 @@
     /* Slightly larger for better readability */
     text-align: center;
     /* Ensure the heading is centered */
+    
 }
 
 .main_hero p {

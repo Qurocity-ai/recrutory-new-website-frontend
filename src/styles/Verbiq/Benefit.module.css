@@ -14,6 +14,10 @@
     /* Spacing from the top */
     margin-left: 2.3rem;
     margin-right: 2.3rem;
+
+    /* border: 1px solid red; */
+    padding-left: 9rem;
+    padding-right: 9rem;
    
 }
 
@@ -25,7 +29,7 @@
     /* Center content horizontally */
     justify-content: center;
     /* Center content vertically */
-    height: auto;
+    height: 180px;
     /* Adjust height based on content */
     padding: 1rem;
     /* Padding inside each card */

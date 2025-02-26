@@ -12,6 +12,9 @@
     max-width: 1400px;
     margin-left: 2.5rem;
     margin-right: 3rem;
+    /* border: 1px solid red; */
+    padding-left: 9rem;
+    padding-right: 9rem;
 }
 
 /* Card container */

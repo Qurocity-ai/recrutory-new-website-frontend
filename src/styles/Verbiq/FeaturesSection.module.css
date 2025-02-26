@@ -13,6 +13,9 @@
     font-family: "Poppins", sans-serif;
     margin-left: 2rem;
     margin-right: 2rem;
+    /* border: 1px solid red; */
+    padding-left: 9rem;
+    padding-right: 9rem;
 }
 
 /* Feature Item Styles */

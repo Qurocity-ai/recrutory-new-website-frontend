@@ -2,6 +2,9 @@
     /* padding-left: 20px;
     padding-right: 20px; */
     margin-top: 8rem;
+    /* border: 1px solid red; */
+    padding-left: 9rem;
+    padding-right: 9rem;
 }
 
 .mainsection h1 {
@@ -39,8 +42,9 @@
     grid-template-columns: repeat(3, 1fr);
     /* 3 columns for desktop/laptop */
     gap: 30px;
-    padding: 75px;
+    /* padding: 75px; */
     margin-top: -70px;
+    /* border: 1px solid red; */
 }
 
 span {

@@ -11,6 +11,9 @@
     margin-top: 5rem;
     background-color: white;
     /* background-image: url("https://res.cloudinary.com/dgvbilofn/image/upload/v1714020450/background_zceu6f.png"); */
+    /* border: 1px solid red; */
+    padding-left: 9rem;
+    padding-right: 9rem;
 }
 
 .card {
