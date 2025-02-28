@@ -92,6 +92,8 @@
         grid-template-columns: 1fr;
         /* One card per row on smaller screens */
         gap: 1rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
     }
     .card_body h3{
         line-height: 5px;

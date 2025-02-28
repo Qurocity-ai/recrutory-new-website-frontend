@@ -1,22 +1,18 @@
-/* Default styles (no changes to existing styles) */
-
 .card {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    width: 1250px;
-    margin: 0 auto;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    /* border: 1px solid red; */
+    padding: 1rem;
+    width: 90%;
+    max-width: 1250px;
+    margin: 4rem auto;
 }
 
 .title {
     color: #02586F;
     font-size: 1.4rem;
     font-weight: 400;
+    text-align: center;
 }
 
 .description h3 {
@@ -24,6 +20,7 @@
     font-size: 1.2rem;
     margin-bottom: 10px;
     font-weight: 400;
+    text-align: center;
 }
 
 .description li {
@@ -34,16 +31,18 @@
 .skillContener {
     display: flex;
     justify-content: center;
-    align-content: center;
-    gap: 9rem;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .skillsGrid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
     margin: 20px 0;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .skill h4 {
@@ -57,6 +56,7 @@
     border-radius: 4px;
     height: 10px;
     overflow: hidden;
+    width: 100%;
 }
 
 .progress {
@@ -67,13 +67,15 @@
 
 .improvement {
     margin-top: 20px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .improvement h4 {
     font-size: 1.1rem;
     margin-bottom: 10px;
     color: #02495E;
+    text-align: center;
 }
 
 .improvement ul {
@@ -86,81 +88,33 @@
     margin-bottom: 5px;
 }
 
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-    .card {
-        margin: 2rem 1rem;
-        /* Add margin on smaller screens */
-        padding-left: 0.8rem;
-        padding-right: 0.8rem;
-    }
-
+/* Responsive Design */
+@media screen and (max-width: 768px) {
     .skillContener {
         flex-direction: column;
-        /* Stack items vertically */
         gap: 2rem;
     }
 
     .skillsGrid {
         grid-template-columns: 1fr;
-        /* Single column for smaller screens */
         width: 100%;
-        /* Full width */
-        gap: 15px;
-    }
-
-    .title {
-        font-size: 1.2rem;
-        /* Reduce font size slightly */
-    }
-
-    .description h3 {
-        font-size: 1rem;
-        /* Adjust for better readability on smaller screens */
-    }
-
-    .description li {
-        font-size: 0.9rem;
-        /* Adjust font size */
     }
 
     .improvement {
         width: 100%;
-        /* Full width on smaller screens */
-        padding: 0 1rem;
     }
 
-    .improvement h4 {
-        font-size: 1rem;
-        /* Reduce font size */
-    }
-}
-
-@media (max-width: 480px) {
     .card {
-        margin: 1rem;
-        /* Reduce margin further for very small screens */
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+        padding: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     .title {
+        font-size: 1.2rem;
+    }
+
+    .description h3 {
         font-size: 1rem;
-        /* Further reduce font size for very small screens */
-    }
-
-    .skillsGrid {
-        gap: 10px;
-        /* Reduce the gap between items */
-    }
-
-    .improvement ul {
-        padding-left: 10px;
-        /* Adjust padding for smaller screens */
-    }
-
-    .progressBar {
-        height: 8px;
-        /* Adjust height for compact view */
     }
 }
