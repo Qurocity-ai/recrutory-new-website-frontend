@@ -38,13 +38,13 @@ const Navbar = () => {
                     Jobseeker
                 </Link>
 
-                <Link to="/coperate" className={
+                <Link to="/corporate" className={
                     `${getLinkClass("/")} ${Nav.topper}`
                 } onClick={closeMenu}>
                     Corporate
                 </Link>
                 <Link
-                    to="/product"
+                    to="/Verbiq"
                     className={getLinkClass("/product")}
                     onClick={closeMenu}
                 >
@@ -73,13 +73,13 @@ const Navbar = () => {
                         >
                             Trends
                         </Link>
-                        <Link
+                        {/* <Link
                             to="/industries"
                             className={getLinkClass("/globalinsights/industries")}
                             onClick={closeMenu}
                         >
                             Industries
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
                 <Link to="/blogs" className={getLinkClass("/blogs")} onClick={closeMenu}>

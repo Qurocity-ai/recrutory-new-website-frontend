@@ -107,11 +107,15 @@
     .assessment_container {
         grid-template-columns: 1fr;
         /* Stack cards into a single column */
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     /* Smaller font for heading */
     .heading p {
         font-size: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     /* Adjust card text */

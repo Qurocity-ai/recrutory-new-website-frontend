@@ -63,6 +63,8 @@
     .benefit-container {
         grid-template-columns: 1fr;
         /* Stack cards into one column */
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     /* Adjust image size for smaller screens */

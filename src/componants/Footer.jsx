@@ -10,11 +10,8 @@ function Footer() {
                 <div className={styles.footer_bottom}>
                     <div className={styles.footer_about}>
                         <h4>About US</h4>
-                        <p>Recrutory is a talent recruitment agency specializing in multilingual recruitment,
-                            global talent search,and assessment and screening. We are dedicated to finding
-                            the most skilled professionals for businesses in India and around the world.
-                            Our extensive network and expert team ensure that we connect you with the best
-                            talent available.
+                        <p>Recrutory is dedicated to helping you succeed! Whether you’re searching for a job or an experienced language professional, we excel at pairing skilled individuals like you with top companies across various sectors. Our aim is to find roles that match your expertise, background, and career ambitions. From local opportunities to international positions, we make sure your talents are acknowledged and well-compensated.
+
                         </p>
                     </div>
                     <div className={styles.footer_links}>

@@ -70,5 +70,7 @@
     .features_container {
         grid-template-columns: 1fr;
         /* Single column on small screens */
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }

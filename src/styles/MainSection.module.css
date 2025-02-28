@@ -65,7 +65,8 @@
         /* margin-left: 2rem; */
         justify-content: center;
         overflow: hidden;
-        
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .right {

@@ -10,7 +10,7 @@ const CandidateCard = () => {
             <div className={styles.description}>
                 <h3>Comprehensive Candidate Assessment</h3>
 
-                <ul><li> Novatory's Comprehensive Candidate Assessment certifies top language experts for your needs.</li>
+                <ul><li> Recrutory's Comprehensive Candidate Assessment certifies top language experts for your needs.</li>
                     <li> We evaluate practical language skills, technical expertise, and industry knowledge to match
                         your specific roles.</li>
                     <li> Our approach also assesses teamwork and communication, ensuring you find candidates who excel

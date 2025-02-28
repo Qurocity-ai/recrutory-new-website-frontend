@@ -43,7 +43,7 @@
     /* 3 columns for desktop/laptop */
     gap: 30px;
     /* padding: 75px; */
-    margin-top: -70px;
+    margin-top: -1px;
     /* border: 1px solid red; */
 }
 
@@ -109,9 +109,6 @@ span {
 
 }
 
-.jobCard .detailsLink:hover {
-    /* text-decoration: underline; */
-}
 
 /* Media query for tablet and smaller screens */
 @media (max-width: 1024px) {
@@ -127,6 +124,10 @@ span {
         grid-template-columns: 1fr;
         /* 1 column for mobile */
     }
+    .mainsection{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -136,5 +137,9 @@ span {
 
     .mainsection h1 {
         font-size: 20px;
+    }
+    .mainsection{
+    padding-left: 2rem;
+    padding-right: 2rem;
     }
 }

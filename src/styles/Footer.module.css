@@ -125,6 +125,9 @@
     .footer_contact h4 {
         text-align: center;
     }
+                .footer_contact p {
+                    text-align: center;
+                }
 }
 
 /* Small screens */

@@ -92,8 +92,8 @@
         grid-template-columns: 1fr;
         /* One card per row on smaller screens */
         gap: 1rem;
-        padding-left: 6rem;
-        padding-right: 6rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
     .card_body h3{
         line-height: 5px;
@@ -106,6 +106,7 @@
         order: -1;
         width: 90%;
         margin-bottom: 20px;
+        padding-right: 6rem;
     }
 
     .left {
@@ -143,6 +144,6 @@
         max-width: 300px;
         /* Set a max-width for the image */
         height: auto;
-
+     
     }
 }

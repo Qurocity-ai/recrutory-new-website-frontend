@@ -141,6 +141,8 @@
 @media screen and (max-width: 768px) {
     .insight {
         margin: 1rem;
+        padding-left: 2rem;
+            padding-right: 2rem;
     }
 
     .left-ins-content ul li,

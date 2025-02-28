@@ -66,7 +66,12 @@
         padding-right: 1rem;
         /* Compact padding for tablets */
     }
-
+  .topSection h4{
+   text-align: center;
+  }
+        .topSection p{
+           text-align: center;
+        }
     .bottomSection {
         margin: 2rem;
         flex-direction: column;
@@ -78,12 +83,17 @@
     .leftSection img {
         width: 200px;
         /* Smaller image for tablets */
+        padding-left: 6rem;
     }
 
     .rightSection h4 {
         text-align: center;
         /* Center-align text for better visuals */
     }
+                .rightSection p {
+                    text-align: center;
+                    /* Center-align text for better visuals */
+                }
 }
 
 @media (max-width: 480px) {
