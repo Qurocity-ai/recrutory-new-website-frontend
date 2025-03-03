@@ -11,6 +11,8 @@ import Trends from '../pages/Trends/Trends'
 import Industries from '../pages/Industries/Industries'
 import Coperate from '../pages/Coperatepage/Coperate'
 
+import NewAdd from '../pages/NewAdd/NewAdd'
+
 function AllRoutes() {
   return (
     <div>
@@ -27,6 +29,7 @@ function AllRoutes() {
         <Route path="/trends" element={<Trends />} />
         <Route path="/industries" element={<Industries />} />
         <Route path='/corporate' element={<Coperate />} />
+        <Route path='/assesment' element={<NewAdd />} />
 
       </Routes>
     </div>

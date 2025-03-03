@@ -1,0 +1,31 @@
+.container {
+    text-align: center;
+    padding: 40px;
+    
+    width: 500px;
+    margin: auto;
+    
+  }
+   
+  .header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+   
+  .logo {
+    width: 200px; /* Adjust as needed */
+  }
+   
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #004A6E;
+    
+  }
+  
+   
+  .subtitle {
+    font-size: 16px;
+    color: #7a7a7a;
+  }
