@@ -80,6 +80,7 @@ const Navbar = () => {
                         >
                             Industries
                         </Link> */}
+                        {/* Here are adding somethings */}
                     </div>
                 </div>
                 <Link to="/blogs" className={getLinkClass("/blogs")} onClick={closeMenu}>
