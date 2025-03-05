@@ -4,9 +4,11 @@ import Slider from "react-slick";
 import styles from "./MiddleSection.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useNavigate } from "react-router-dom";
 
 const MiddleSection = () => {
   const [users, setUsers] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios
@@ -39,7 +41,7 @@ const MiddleSection = () => {
       <Slider {...settings}>
         {users.map((user, index) => (
           <div key={index} className={styles.cardWrapper}>
-            <div className={styles.card}>
+            <div className={styles.card}  onClick={() => navigate(`/details/${user.id}`, { state: { user } })}>
               <img
                 src={user.profile_image || "https://via.placeholder.com/150"}
                 alt={user.name}

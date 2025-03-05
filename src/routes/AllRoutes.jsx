@@ -12,6 +12,7 @@ import Industries from '../pages/Industries/Industries'
 import Coperate from '../pages/Coperatepage/Coperate'
 
 import NewAdd from '../pages/NewAdd/NewAdd'
+import CardDetails from '../pages/NewAdd/CardDetails'
 
 function AllRoutes() {
   return (
@@ -30,6 +31,7 @@ function AllRoutes() {
         <Route path="/industries" element={<Industries />} />
         <Route path='/corporate' element={<Coperate />} />
         <Route path='/assesment' element={<NewAdd />} />
+        <Route path="/details/:id" element={<CardDetails/>} />
 
       </Routes>
     </div>
