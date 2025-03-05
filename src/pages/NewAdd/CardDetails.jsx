@@ -3,6 +3,8 @@ import { useParams, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 import styles from "./CardDetails.module.css";
 
+
+
 const CardDetails = () => {
   const { id } = useParams(); // Get user ID from URL
   const location = useLocation();
@@ -37,8 +39,11 @@ const CardDetails = () => {
   const workExperience = user.work_experience || [];
 
   return (
+    <div className={styles.main} >
+    <img src="/assets/RecutoryVerbiqLogo.png" alt="Logo" className={styles.logo} />
     <div className={styles.detailsContainer}>
       {/* Left Section: User Details */}
+      
       <div className={styles.leftSection}>
         <div className={styles.detailsCard}>
           <div className={styles.top}>
@@ -46,6 +51,7 @@ const CardDetails = () => {
             {user.name} | <span>Total work experience: {user.total_experience} Years</span>
           </h2>
           </div>
+          <div className={styles.cDetails}>
           <p className={styles.proficiency}>
             <strong>Proficiency:</strong> {frenchProficiency.level} | {frenchProficiency.certification}
           </p>
@@ -94,7 +100,10 @@ const CardDetails = () => {
             <p>No certifications listed</p>
           )}
 
-          <button className={styles.backButton} onClick={() => navigate(-1)}>Go Back</button>
+<button className={styles.backButton} onClick={() => navigate(-1)}>Go Back</button>
+          </div>
+
+          
         </div>
       </div>
 
@@ -112,6 +121,7 @@ const CardDetails = () => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };
