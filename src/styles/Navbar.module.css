@@ -102,7 +102,7 @@
 
 
     .navbar_links.open {
-        max-height: 300px;
+        max-height: 700px;
         width: 100%;
         background-color: aliceblue;
         transition: max-height 0.3s ease-in-out;

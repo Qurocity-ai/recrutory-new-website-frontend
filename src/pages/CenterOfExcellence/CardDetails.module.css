@@ -47,6 +47,7 @@
     height: 50px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .logo {
     width: 200px; 
@@ -268,7 +269,7 @@ ul li::before {
 
     background-color: white;
 
-    padding: 20px;
+    padding: 10px;
 
     border-radius: 10px;
 
@@ -284,9 +285,9 @@ ul li::before {
 
 .profileImage {
 
-    width: 150px;
+    width: 200px;
 
-    height: 150px;
+    height: auto;
 
     border-radius: 10px;
 
@@ -483,6 +484,11 @@ ul li::before {
         padding: 10px;
 
     }
+    
+    .name{
+        height: 60px;
+        
+    }
  
     .profileCard {
 
@@ -494,9 +500,9 @@ ul li::before {
  
     .profileImage {
 
-        width: 100px;
+        width: 300px;
 
-        height: 100px;
+        height: auto;
 
     }
  
@@ -512,6 +518,9 @@ ul li::before {
 
         padding: 8px;
 
+    }
+    .detailsContainer{
+        flex-direction: column-reverse;
     }
 
 }

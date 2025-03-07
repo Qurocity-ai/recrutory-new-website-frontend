@@ -117,3 +117,16 @@
         left: -30px;
     }
 }
+
+@media (max-width: 500px) {
+    .card {
+        width: 200px;
+        margin-left: 30px;
+    }
+    .nextArrow {
+        right: -30px;
+    }
+    .prevArrow {
+        left: -30px;
+    }
+}

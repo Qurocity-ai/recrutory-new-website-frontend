@@ -1,0 +1,153 @@
+.container {
+  text-align: center;
+
+  padding: 40px;
+  /* padding-left: 8rem;
+  padding-right: 8rem; */
+  margin-top: 2rem;
+}
+
+.heading {
+  font-size: 25px;
+
+  font-weight: 600;
+
+  color: #a30000;
+
+  margin-bottom: 20px;
+}
+
+.features {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 40px;
+
+  margin-bottom: 40px;
+ 
+  
+}
+
+.feature {
+  max-width: 350px;
+
+  text-align: left;
+
+  font-size: 16px;
+  
+  
+}
+
+.feature strong {
+  color: #004A6E;
+  font-size: 16px;
+  font-weight: 600;
+  
+}
+
+.subHeading {
+  font-size: 25px;
+  font-weight: 600;
+  
+
+  color: #a30000;
+  margin-top: 4rem;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 18px;
+
+  color:#004A6E;
+
+  max-width: 800px;
+
+  margin: 0 auto;
+}
+
+.highlight {
+  font-size: 18px;
+
+  color: #004A6E;
+
+  max-width: 800px;
+
+  margin: 20px auto 0;
+}
+
+.aiText {
+  color: #a30000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.importantText {
+  color: #a30000;
+  font-size: 18px;
+  font-weight: 600;
+}
+/* hello */
+
+.COE{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    width: 95%;
+  }
+
+  .features {
+    flex-direction: column; /* Stack features vertically */
+    gap: 20px;
+  }
+
+  .feature {
+    max-width: 100%;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .heading,
+  .subHeading {
+    font-size: 22px;
+  }
+
+  .description,
+  .highlight {
+    font-size: 16px;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .heading,
+  .subHeading {
+    font-size: 20px;
+  }
+
+  .feature {
+    font-size: 14px;
+  }
+
+  .description,
+  .highlight {
+    font-size: 14px;
+  }
+
+  .aiText,
+  .importantText,
+  .COE {
+    font-size: 16px;
+  }
+}

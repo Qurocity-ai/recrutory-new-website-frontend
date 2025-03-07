@@ -4,7 +4,7 @@ import styles from "./BottomSection.module.css";
 const BottomSection = () => {
   return (
 <div className={styles.container}>
-<h2 className={styles.heading}>Why Our COE Panel Stands Out</h2>
+<h2 className={styles.heading}>Why Our Center of Excellence (COE) Panel Stands Out</h2>
 <div className={styles.features}>
 <div className={styles.feature}>
 
@@ -31,7 +31,7 @@ const BottomSection = () => {
  
       <h2 className={styles.subHeading}>Versatile Language Assessments for Diverse Roles</h2>
 <p className={styles.description}>
-        Our <strong>Center of Excellence (COE)</strong> panel goes beyond traditional language assessments. We evaluate candidates for a wide range of roles, ensuring they meet industry-specific communication standards.
+        Our <strong className={styles.COE}>Center of Excellence (COE)</strong> panel goes beyond traditional language assessments. We evaluate candidates for a wide range of roles, ensuring they meet industry-specific communication standards.
 </p>
 <p className={styles.highlight}>
         By combining human expertise with <strong className={styles.aiText}>AI-driven advancements</strong>, our COE panel ensures businesses get the <strong className={styles.importantText}>best linguistic talent</strong> for both human-led roles and <strong className={styles.importantText}>emerging AI-driven opportunities</strong>.

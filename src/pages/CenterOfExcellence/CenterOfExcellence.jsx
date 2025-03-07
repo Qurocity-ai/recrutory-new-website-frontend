@@ -3,7 +3,7 @@ import TopSection from './TopSection'
 import BottomSection from './BottomSection'
 import MiddleSection from './MiddleSection'
 
-function NewAdd() {
+function CenterOfExcellence() {
   return (
     <div>
       <TopSection/>
@@ -13,4 +13,4 @@ function NewAdd() {
   )
 }
 
-export default NewAdd
+export default CenterOfExcellence

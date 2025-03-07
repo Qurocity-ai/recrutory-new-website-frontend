@@ -1,0 +1,52 @@
+.container {
+  text-align: center;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.logo {
+  width: 120px; /* Smaller size for mobile */
+  max-width: 100%;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #004A6E;
+  margin-top: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #7a7a7a;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 500px) {
+  .container {
+      padding: 15px;
+      width: 95%;
+  }
+
+  .logo {
+      width: 100px;
+  }
+
+  .title {
+      font-size: 18px;
+  }
+
+  .subtitle {
+      font-size: 13px;
+  }
+}
