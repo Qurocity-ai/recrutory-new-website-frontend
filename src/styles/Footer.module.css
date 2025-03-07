@@ -44,6 +44,7 @@
 
 .footer ul li {
     margin-bottom: 10px;
+    /* list-style: none; */
 }
 
 .footer ul li a {
@@ -55,6 +56,7 @@
     font-family: "Poppins", sans-serif;
     text-align: justify;
     letter-spacing: 0.5px;
+    /* list-style: none; */
 }
 
 .footer ul li a:hover {
