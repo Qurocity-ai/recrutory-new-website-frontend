@@ -1,12 +1,12 @@
+/* ServicePortfolio.module.css */
+
 .container {
-    
     position: relative;
     width: 80%;
-    
     margin: 50px auto;
     background: white;
     padding: 40px;
-    text-align: left;
+    text-align: center;
 }
 .decorativeSquares {
     position: absolute;
@@ -22,7 +22,7 @@
     content: "";
     display: block;
     width: 30px;
-        height: 30px;
+    height: 30px;
     background-color: #b22222;
     border-radius: 5px;
 }
@@ -47,9 +47,9 @@
 
 .heading {
     color: #b22222;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
-    margin-bottom: 5px;
+    text-align: left;
     margin-top: -10px;
     margin-left: 30px;
 }
@@ -57,69 +57,62 @@
     border: 1px solid #9ecbdf;
     width: 550px;
     margin-left: 30px;
-    margin-top: -10px;
+    margin-top: -18px;
+  
   
 }
-
-
 .subtitle {
     color: #b22222;
-    font-size: 18px;
-    margin-bottom: 30px;
-    margin-left: 30px;
+    font-size: 16px;
+    margin-bottom: -25px;
+    text-align: left;
     margin-top: -10px;
+    margin-left: 30px;
+
+}
+
+.contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -50px;
+    margin-left: 30px;
+}
+
+.textContainer {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    gap: 10px; /* Space between the columns */
+    text-align: left;
 }
 
 .gridContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.card {
-    background: #fff;
-    padding: 10px;
-    border-radius: 12px;
-    display: flex;
-    width: 450px;
-    /* align-items: flex-start; */
-    gap: 5px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); */
-}
 
-.icon {
-    width: 150px;
-    height: 80px;
-    object-fit: contain;
-    /* align-items: flex-start; */
-   margin-top: 40px;
-}
-.cardContent{
-    text-align:left;
-}
 
-.cardTitle {
-    font-size: 22px;
+.serviceTitle {
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #003f5c;
-    /* margin-bottom: 5px; */
-    
-}
-
-.cardText {
-    color: #003f5c;
-    font-size: 16px;
+    color: #003366;
     margin-top: -10px;
-   
 }
 
-@media (max-width: 768px) {
-    .gridContainer {
-        grid-template-columns: 1fr;
-    }
-    .card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+.serviceDescription {
+    font-size: 1rem;
+    color: #003366;
+    margin-top: -10px;
+}
+
+.imageContainer {
+    width: 40%;
+}
+
+.serviceImage {
+    width: 100%;
+    height: auto;
 }

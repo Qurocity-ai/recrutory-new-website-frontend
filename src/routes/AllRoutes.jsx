@@ -12,6 +12,7 @@ import Industries from '../pages/Industries/Industries'
 import Coperate from '../pages/Coperatepage/Coperate'
 import CenterOfExcellence from '../pages/CenterOfExcellence/CenterOfExcellence'
 import CardDetails from '../pages/CenterOfExcellence/CardDetails'
+import NewPage from '../pages/NewPage/NewPage'
 
 function AllRoutes() {
   return (
@@ -31,6 +32,7 @@ function AllRoutes() {
         <Route path='/corporate' element={<Coperate />} />
         <Route path='/assesment' element={<CenterOfExcellence />} />
         <Route path="/details/:id" element={<CardDetails/>} />
+        <Route path="/NewPage" element={<NewPage/>} />
 
       </Routes>
     </div>
