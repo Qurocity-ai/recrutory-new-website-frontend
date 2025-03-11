@@ -1,0 +1,55 @@
+.container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.heading {
+    color: #d00;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.cardTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cardText {
+    color: #666;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+    }
+}
