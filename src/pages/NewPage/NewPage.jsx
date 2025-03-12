@@ -7,6 +7,7 @@ import InnovativeLanguagePlatforms from '../BTOPOINT/InnovativeLanguage'
 import Workflow from '../BTOPOINT/Workflow'
 import Footprint from '../BTOPOINT/FootprintUI'
 import LinguisticProcess from '../BTOPOINT/LinguisticProcess'
+import HiringOpt from '../BTOPOINT/HiringOpt'
 
 function NewPage() {
   return (
@@ -16,6 +17,7 @@ function NewPage() {
       <MarketInsights/>
       <ServicePortfolio/>
       <InnovativeLanguagePlatforms/>
+      <HiringOpt/>
       <Workflow/>
       <Footprint/>
     <LinguisticProcess/>
