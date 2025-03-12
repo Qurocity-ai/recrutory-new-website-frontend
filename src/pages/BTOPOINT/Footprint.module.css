@@ -1,0 +1,89 @@
+.container {
+        position: relative;
+            width: 80%;
+        
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            text-align: left;
+}
+
+.heading {
+    color: #c8102e;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.subheading {
+    color: #b22222;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 15px;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #003f5c;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #003f5c;
+}
+
+.decorativeSquares {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.decorativeSquares::before,
+.decorativeSquares::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #b22222;
+    border-radius: 5px;
+}
+
+.decorativeSquares::before {
+    margin-left: 28px;
+}
+
+.decorativeSquares1 {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #b22222;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+}
+
+.hr {
+    border: 1px solid #9ecbdf;
+    width: 550px;
+    margin-left: 10px;
+    margin-top: -7px;
+
+
+}

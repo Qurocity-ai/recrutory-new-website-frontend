@@ -4,6 +4,9 @@ import WhyWeMatter from '../BTOPOINT/WhyWeMatter'
 import MarketInsights from '../BTOPOINT/MarketInsights'
 import ServicePortfolio from '../BTOPOINT/ServicePortfolio'
 import InnovativeLanguagePlatforms from '../BTOPOINT/InnovativeLanguage'
+import Workflow from '../BTOPOINT/Workflow'
+import Footprint from '../BTOPOINT/FootprintUI'
+import LinguisticProcess from '../BTOPOINT/LinguisticProcess'
 
 function NewPage() {
   return (
@@ -13,6 +16,9 @@ function NewPage() {
       <MarketInsights/>
       <ServicePortfolio/>
       <InnovativeLanguagePlatforms/>
+      <Workflow/>
+      <Footprint/>
+    <LinguisticProcess/>
     </div>
   )
 }
