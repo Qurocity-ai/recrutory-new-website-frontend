@@ -1,0 +1,109 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 40px;
+    text-align: left;
+    position: relative;
+   
+}
+.decorativeSquares {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.decorativeSquares::before,
+.decorativeSquares::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #b22222;
+    border-radius: 5px;
+}
+
+.decorativeSquares::before{
+    margin-left: 28px;
+}
+.decorativeSquares1{
+    content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: #b22222;
+        border-radius: 5px;
+        position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            /* gap: 5px; */
+}
+.content {
+    width: 60%;
+    
+}
+
+.imageContainer {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mapImage {
+    width: 80%;
+    max-width: 400px; /* Control image size */
+    height: auto;
+    opacity: 1; /* Match the faded background effect */
+}
+
+.heading {
+    color: #b22222;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 240px;
+    width: 600px;
+}
+
+.tableContainer {
+    display: flex;
+    gap: 30px;
+    margin-left: 200px;
+    width: 90%;
+}
+
+.table {
+    background-color: #b22222;
+    color: white;
+    width: 100%;
+    border-radius: 8px;
+    padding: 15px;
+    
+    opacity: 0.95;
+}
+
+.tableHeader {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
