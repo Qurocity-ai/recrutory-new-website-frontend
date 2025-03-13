@@ -8,6 +8,11 @@ import Workflow from '../BTOPOINT/Workflow'
 import Footprint from '../BTOPOINT/FootprintUI'
 import LinguisticProcess from '../BTOPOINT/LinguisticProcess'
 import HiringOpt from '../BTOPOINT/HiringOpt'
+import CoreService from '../BTOPOINT/CoreService'
+import HiringAssessment from '../BTOPOINT/HiringAssessment'
+import LanguageDistribution from '../BTOPOINT/LanguageDistribution'
+import ContactInfo from '../BTOPOINT/ContactInfo'
+
 
 function NewPage() {
   return (
@@ -18,9 +23,6 @@ function NewPage() {
       <ServicePortfolio/>
       <InnovativeLanguagePlatforms/>
       <HiringOpt/>
-      <Workflow/>
-      <Footprint/>
-    <LinguisticProcess/>
     </div>
   )
 }

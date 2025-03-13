@@ -1,0 +1,116 @@
+.container {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.decorativeSquares {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.decorativeSquares::before,
+.decorativeSquares::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #b22222;
+    border-radius: 5px;
+}
+
+.decorativeSquares::before {
+    margin-left: 28px;
+}
+
+.decorativeSquares1 {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #b22222;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+.heading {
+    color: #b22222;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 30px;
+}
+
+.subtitle {
+    color: #b22222;
+    font-size: 16px;
+    /* margin-bottom: -20px; */
+    text-align: left;
+    margin-top: -8px;
+    margin-left: 30px;
+}
+
+.hr {
+    
+    border: 1px solid #9ecbdf;
+    width: 550px;
+    margin-left: 30px;
+    margin-top: -18px;
+}
+
+.contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.textContainer {
+    width: 30%;
+}
+
+.descriptionContainer {
+    width: 30%;
+    color: #c0c0c0;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-right: 50px;
+}
+
+list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #03314b;
+    font-weight: 600;
+    display: block;
+}
+
+.list li {
+    margin-bottom: 20px;
+    display: block; /* Ensures proper bullet rendering */
+    color: #03314b;
+}
+
+.list li::marker {
+    content: "\2022 "; /* Bullet point fix */
+    color: #03314b; 
+    font-weight: bold;
+}
+
+.list li b {
+    color: #03314b;
+}
+
+
