@@ -23,6 +23,14 @@ function NewPage() {
       <ServicePortfolio/>
       <InnovativeLanguagePlatforms/>
       <HiringOpt/>
+      <CoreService/>
+      <HiringAssessment/>
+      <LanguageDistribution/>
+      <ContactInfo/>
+      <Workflow/>
+      <Footprint/>
+      <LinguisticProcess/>
+
     </div>
   )
 }
