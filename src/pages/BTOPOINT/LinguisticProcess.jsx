@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./LinguisticProcess.module.css";
-
+import { motion } from "framer-motion";
 // Process steps (Images will be added manually later)
 const processSteps = [
     { image: "../assets/image 8.svg", text: "Understand client-specific linguistic needs." },
@@ -19,6 +19,12 @@ const processSteps = [
 
 const LinguisticProcess = () => {
     return (
+        <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.2 }}
+        >
         <div className={styles.container}>
             <div className={styles.decorativeSquares}></div>
             <h2 className={styles.title}>
@@ -41,6 +47,7 @@ const LinguisticProcess = () => {
             </div>
              <div className={styles.decorativeSquares1}></div>
         </div>
+        </motion.div>
     );
 };
 

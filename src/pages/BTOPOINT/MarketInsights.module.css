@@ -1,6 +1,7 @@
 .container {
     position: relative;
     width: 80%;
+    height: 60vh;
     margin: 50px auto;
     background: white;
     padding: 40px;
@@ -70,6 +71,7 @@
 .insightsGrid {
     display: flex;
     justify-content: space-around;
+    gap: 5rem;
 }
 
 .card {

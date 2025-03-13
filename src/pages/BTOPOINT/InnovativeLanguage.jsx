@@ -1,4 +1,5 @@
 import styles from './InnovativeLanguage.module.css';
+import { motion } from "framer-motion";
 const InnovativeLanguage = [
     {
         title: 'VerbiQ Assessment Platform',
@@ -24,6 +25,12 @@ const InnovativeLanguage = [
 
 const InnovativeLanguagePlatforms = () => {
     return (
+          <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false, amount: 0.2 }}
+            >
         <div className={styles.container}>
              <div className={styles.decorativeSquares}></div>
             <h2 className={styles.heading}>Innovative Language Platforms</h2>
@@ -44,6 +51,7 @@ const InnovativeLanguagePlatforms = () => {
             </div>
              <div className={styles.decorativeSquares1}></div>
         </div>
+        </motion.div>
     );
 };
 

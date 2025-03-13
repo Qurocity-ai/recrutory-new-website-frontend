@@ -1,8 +1,14 @@
 import React from "react";
 import styles from "./MarketInsights.module.css";
-
+import { motion } from "framer-motion";
 const MarketInsights = () => {
     return (
+       <motion.div
+                   initial={{ opacity: 0, y: 30 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ duration: 0.8, ease: "easeOut" }}
+                   viewport={{ once: false, amount: 0.2 }}
+               >
         <div className={styles.container}>
              <div className={styles.decorativeSquares}></div>
             <h2 className={styles.heading}>Market Insights on Multilingual Talent</h2>
@@ -27,6 +33,7 @@ const MarketInsights = () => {
             </div>
             <div className={styles.decorativeSquares1} ></div >
         </div>
+        </motion.div> 
     );
 };
 

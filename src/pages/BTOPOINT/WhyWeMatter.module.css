@@ -2,7 +2,7 @@
     
     position: relative;
     width: 80%;
-    
+    height: 60vh;
     margin: 50px auto;
     background: white;
     padding: 40px;
@@ -81,18 +81,19 @@
     padding: 10px;
     border-radius: 12px;
     display: flex;
-    width: 450px;
+    width: 470px;
     /* align-items: flex-start; */
-    gap: 5px;
+    gap: 10px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); */
 }
 
 .icon {
-    width: 150px;
-    height: 80px;
+    width: 280px;
+    height: 150px;
     object-fit: contain;
     /* align-items: flex-start; */
    margin-top: 40px;
+   /* border: 1px solid rebeccapurple; */
 }
 .cardContent{
     text-align:left;

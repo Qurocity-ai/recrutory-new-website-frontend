@@ -1,5 +1,5 @@
 import styles from './ServicePortfolio.module.css';
-
+import { motion } from "framer-motion";
 const serviceDetails = [
     {
         title: 'Foreign Language Recruitment',
@@ -25,26 +25,33 @@ const serviceDetails = [
 
 const ServicePortfolio = () => {
     return (
-        <div className={styles.container}>
-             <div className={styles.decorativeSquares}></div>
-            <h2 className={styles.heading}>Comprehensive Service Portfolio</h2>
-             <hr className={styles.hr}></hr>
-            <p className={styles.subtitle}>Explore our diverse recruitment and language services</p>
-            <div className={styles.contentWrapper}>
-                <div className={styles.textContainer}>
-                    {serviceDetails.map((service, index) => (
-                        <div key={index} className={styles.serviceItem}>
-                            <h3 className={styles.serviceTitle}>{service.title}</h3>
-                            <p className={styles.serviceDescription}>{service.description}</p>
-                        </div>
-                    ))}
+        <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.2 }}
+        >
+            <div className={styles.container}>
+                <div className={styles.decorativeSquares}></div>
+                <h2 className={styles.heading}>Comprehensive Service Portfolio</h2>
+                <hr className={styles.hr}></hr>
+                <p className={styles.subtitle}>Explore our diverse recruitment and language services</p>
+                <div className={styles.contentWrapper}>
+                    <div className={styles.textContainer}>
+                        {serviceDetails.map((service, index) => (
+                            <div key={index} className={styles.serviceItem}>
+                                <h3 className={styles.serviceTitle}>{service.title}</h3>
+                                <p className={styles.serviceDescription}>{service.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className={styles.imageContainer}>
+                        <img src="./assets/ServicePortfolio1.jpg" alt="Service Portfolio" className={styles.serviceImage} />
+                    </div>
                 </div>
-                <div className={styles.imageContainer}>
-                    <img src="./assets/ServicePortfolio1.jpg" alt="Service Portfolio" className={styles.serviceImage} />
-                </div>
+                <div className={styles.decorativeSquares1}></div>
             </div>
-             <div className={styles.decorativeSquares1}></div>
-        </div>
+        </motion.div>
     );
 };
 
