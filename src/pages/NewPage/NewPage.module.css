@@ -1,0 +1,76 @@
+/* Page Wrapper */
+.pageWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Content Section */
+.contentSection {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Slides Container */
+.slidesContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Slide Default State */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 2.5s ease-in-out, opacity 2.5s ease-in-out;
+}
+
+/* Active Slide - smoothly enters */
+.active {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 2;
+}
+
+/* Previous Slide - smoothly moves up */
+.previous {
+    transform: translateY(-100%);
+    opacity: 0;
+    z-index: 1;
+}
+
+/* Page Indicator (Dots) */
+.pageIndicator {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.activeDot {
+    background-color: #3498db;
+    transform: scale(1.3);
+}
