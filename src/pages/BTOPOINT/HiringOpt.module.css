@@ -119,3 +119,136 @@
     width: 100%;
     height: auto;
 }
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .textContainer {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        /* Single-column grid */
+        text-align: center;
+    }
+
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns */
+        gap: 15px;
+    }
+
+    .imageContainer {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .serviceImage {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 22px;
+        margin-left: 15px;
+    }
+
+    .hr {
+        width: 80%;
+        margin-left: 15px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    .contentWrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .textContainer {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .gridContainer {
+        grid-template-columns: repeat(1, 1fr);
+        /* Single-column */
+        gap: 15px;
+    }
+
+    .imageContainer {
+        width: 80%;
+    }
+
+    .serviceTitle {
+        font-size: 1rem;
+    }
+
+    .serviceDescription {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .hr {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .contentWrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .textContainer {
+        width: 100%;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .gridContainer {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .imageContainer {
+        width: 90%;
+    }
+
+    .serviceTitle {
+        font-size: 1rem;
+    }
+
+    .serviceDescription {
+        font-size: 0.9rem;
+    }
+}

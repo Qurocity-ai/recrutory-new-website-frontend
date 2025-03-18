@@ -9,21 +9,38 @@
 }
 
 .heading {
-    color: #c8102e;
+    color: #b22222;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 600;
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 30px;
 }
 
-.subheading {
+.hr {
+    border: 1px solid #9ecbdf;
+    width: 550px;
+    margin-left: 30px;
+    margin-top: -18px;
+
+
+}
+
+.subheading{
     color: #b22222;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: -25px;
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 30px;
+
 }
 
 .gridContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 5px;
+    margin-top: 15px;
 }
 
 .card {
@@ -79,11 +96,3 @@
     /* gap: 5px; */
 }
 
-.hr {
-    border: 1px solid #9ecbdf;
-    width: 550px;
-    margin-left: 10px;
-    margin-top: -7px;
-
-
-}

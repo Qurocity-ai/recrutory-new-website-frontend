@@ -32,7 +32,7 @@ function AllRoutes() {
         <Route path='/corporate' element={<Coperate />} />
         <Route path='/assesment' element={<CenterOfExcellence />} />
         <Route path="/details/:id" element={<CardDetails/>} />
-        <Route path="/NewPage" element={<NewPage/>} />
+        <Route path="/corporatedeck" element={<NewPage/>} />
 
       </Routes>
     </div>

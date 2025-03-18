@@ -12,9 +12,9 @@ const Workflow = () => {
             <div className={styles.container}>
                 <div className={styles.decorativeSquares}></div>
                 <div className={styles.header}>
-                    <h2 className={styles.title}>Workflow and Process: Streamlined Approach</h2>
+                    <h2 className={styles.heading}>Workflow and Process: Streamlined Approach</h2>
                     <hr className={styles.hr}></hr>
-                    <p className={styles.subtitle}>
+                    <p className={styles.subheading}>
                         A Tailored, End-to-End Workflow for Optimal Language Solutions.
                     </p>
                 </div>

@@ -1,7 +1,7 @@
 .container {
     position: relative;
     width: 80%;
-    height: 60vh;
+    /* height: 60vh; */
     margin: 50px auto;
     background: white;
     padding: 40px;
@@ -97,4 +97,116 @@
     font-size: 14px;
     text-align: left;
     margin-top: -10px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .insightsGrid {
+        gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        max-width: 220px;
+    }
+
+    .icon {
+        width: 160px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 22px;
+        margin-left: 15px;
+    }
+
+    .hr {
+        width: 80%;
+        margin-left: 15px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    .insightsGrid {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .icon {
+        width: 140px;
+        height: 110px;
+    }
+
+    .cardTitle,
+    .cardText {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .hr {
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    .insightsGrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 90%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .icon {
+        width: 120px;
+        height: 100px;
+    }
+
+    .cardText {
+        font-size: 14px;
+    }
 }

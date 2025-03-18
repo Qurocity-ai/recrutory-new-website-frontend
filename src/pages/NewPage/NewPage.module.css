@@ -2,15 +2,17 @@
 .pageWrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    padding: 10px;
 }
 
 /* Content Section */
 .contentSection {
     position: relative;
-    height: 90vh;
+    height: 80vh;
+    /* Reduce height for small screens */
     overflow: hidden;
-    margin: 20px 0;
+    margin: 15px 0;
     border-radius: 10px;
 }
 
@@ -34,14 +36,14 @@
     transition: transform 2.5s ease-in-out, opacity 2.5s ease-in-out;
 }
 
-/* Active Slide - smoothly enters */
+/* Active Slide */
 .active {
     transform: translateY(0);
     opacity: 1;
     z-index: 2;
 }
 
-/* Previous Slide - smoothly moves up */
+/* Previous Slide */
 .previous {
     transform: translateY(-100%);
     opacity: 0;
@@ -51,18 +53,19 @@
 /* Page Indicator (Dots) */
 .pageIndicator {
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     z-index: 10;
 }
 
+/* Dot */
 .dot {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -73,4 +76,42 @@
 .activeDot {
     background-color: #3498db;
     transform: scale(1.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contentSection {
+        height: 70vh;
+        /* Adjust height for medium screens */
+        margin: 10px 0;
+    }
+
+    .pageIndicator {
+        right: 5px;
+        gap: 6px;
+    }
+
+    .dot {
+        width: 7px;
+        height: 7px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contentSection {
+        height: 60vh;
+        /* Reduce height further for small screens */
+        margin: 5px 0;
+        border-radius: 5px;
+    }
+
+    .pageIndicator {
+        right: 3px;
+        gap: 5px;
+    }
+
+    .dot {
+        width: 6px;
+        height: 6px;
+    }
 }

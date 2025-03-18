@@ -20,6 +20,9 @@ function Footer() {
                             <li><a href='/product'>VerbiQ</a></li>
                             <li><a href='#'>Blogs</a></li>
                             <li><a href='#'>Media & Press Release</a></li>
+                            <li>
+                                <a href='/corporatedeck'>Corporate Deck</a>
+                            </li>
                         </ul>
                     </div>
                     <div className={styles.footer_contact}>
