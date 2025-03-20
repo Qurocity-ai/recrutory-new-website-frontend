@@ -1,13 +1,14 @@
 .container {
     position: relative;
     width: 80%;
-    height: auto;
+    height: 70vh;
+    /* Adjust height for flexibility */
     margin: 50px auto;
     background: white;
     padding: 40px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    text-align: left;
+    
+    margin-top: 0px;
 }
 
 .decorativeSquares {
@@ -141,7 +142,8 @@
 
 @media screen and (max-width: 768px) {
     .container {
-        width: 95%;
+        width: 90%;
+        height: auto;
         padding: 25px;
     }
 

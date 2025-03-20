@@ -1,11 +1,14 @@
 .container {
-        position: relative;
-            width: 80%;
-            height: auto;
-            margin: 50px auto;
-            background: white;
-            padding: 40px;
-            text-align: left;
+    position: relative;
+    width: 80%;
+    height: 70vh;
+    /* Adjust height for flexibility */
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    text-align: left;
+    
+    margin-top: 0px;
 }
 
 .header {
@@ -102,6 +105,42 @@
     flex-direction: column;
     /* gap: 5px; */
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    .heading {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .hr {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    
+
+    
+
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns instead of 3 */
+        gap: 10px;
+    }
+
+
+}
 /* Extra Small Screens (Phones) */
 @media (max-width: 480px) {
     .container {
@@ -134,5 +173,8 @@
 
     .card{
         margin-bottom: -50px;
+    }
+    .decorativeSquares1{
+        margin-bottom: 0;
     }
 }

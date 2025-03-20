@@ -3,11 +3,13 @@
     justify-content: space-between;
     align-items: center;
     width: 80%;
+    height: 70vh;
     margin: 50px auto;
     background-color: white;
     padding: 40px;
     text-align: left;
     position: relative;
+    margin-top: 0px;
 }
 
 .decorativeSquares {
@@ -145,7 +147,8 @@
 
 @media screen and (max-width: 768px) {
     .container {
-        width: 95%;
+        width: 90%;
+        height: auto;
         padding: 25px;
         flex-direction: column;
         align-items: center;

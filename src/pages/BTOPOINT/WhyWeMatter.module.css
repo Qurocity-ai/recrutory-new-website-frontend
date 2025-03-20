@@ -2,12 +2,15 @@
 .container {
     position: relative;
     width: 80%;
-    height: auto;
+    height: 70vh;
     /* Adjust height for flexibility */
     margin: 50px auto;
     background: white;
     padding: 40px;
     text-align: left;
+    
+    margin-top: 0px;
+    
 }
 
 /* Decorative Squares */
@@ -90,8 +93,9 @@
     border-radius: 12px;
     display: flex;
     width: 100%;
-    max-width: 470px;
+    max-width: 550px;
     gap: 10px;
+    
 }
 
 /* Icon */
@@ -126,6 +130,7 @@
 @media (max-width: 768px) {
     .container {
         width: 90%;
+        height: auto;
         padding: 20px;
     }
 

@@ -1,11 +1,14 @@
 .container {
     position: relative;
     width: 80%;
-    height: auto;
+    height: 70vh;
+    /* Adjust height for flexibility */
     margin: 50px auto;
     background: white;
     padding: 40px;
-    text-align: center;
+    text-align: left;
+    
+    margin-top: 0px;
 }
 .decorativeSquares {
     position: absolute;
@@ -127,6 +130,7 @@
 @media (max-width: 768px) {
     .container {
         width: 95%;
+        height: auto;
         padding: 20px;
     }
 
