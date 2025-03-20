@@ -11,6 +11,28 @@
     gap: 20px;
 }
 
+/* Desktop: Two-section layout */
+@media screen and (min-width: 769px) {
+    .container {
+        flex-wrap: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .textContainer {
+        width: 55%;
+        text-align: left;
+    }
+
+    .imageContainer {
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/* Common styles */
 .decorativeSquares {
     position: absolute;
     top: 0;
@@ -99,9 +121,9 @@
 }
 
 .imageContainer {
-    width: 100%;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .illustration {
@@ -135,9 +157,13 @@
         margin: 10px auto;
     }
 
+    /* On mobile, image moves to bottom center */
     .imageContainer {
+        order: 1;
+        /* Moves the image below text */
         justify-content: center;
         width: 100%;
+        margin-top: 20px;
     }
 }
 

@@ -1,11 +1,11 @@
 .container {
-        position: relative;
-            width: 80%;
-            height: 60vh;
-            margin: 50px auto;
-            background: white;
-            padding: 40px;
-            text-align: left;
+    position: relative;
+    width: 80%;
+    height: 60vh;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    text-align: left;
 }
 
 .heading {
@@ -22,18 +22,15 @@
     width: 550px;
     margin-left: 30px;
     margin-top: -18px;
-
-
 }
 
-.subheading{
+.subheading {
     color: #b22222;
     font-size: 16px;
     margin-bottom: -25px;
     text-align: left;
     margin-top: -10px;
     margin-left: 30px;
-
 }
 
 .gridContainer {
@@ -93,6 +90,79 @@
     left: 0;
     display: flex;
     flex-direction: column;
-    /* gap: 5px; */
 }
 
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .hr {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .subheading {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .hr {
+        width: 100%;
+    }
+
+    .subheading {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    .gridContainer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card h3 {
+        font-size: 14px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+}

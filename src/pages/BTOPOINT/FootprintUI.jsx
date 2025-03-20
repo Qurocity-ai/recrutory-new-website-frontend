@@ -2,12 +2,6 @@ import styles from "./Footprint.module.css";
 import { motion } from "framer-motion";
 const Footprint = () => {
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: false, amount: 0.2 }}
-        >
             <div className={styles.container}>
                 <div className={styles.decorativeSquares}></div>
                 <h2 className={styles.heading}>Our footprint in the last 6 months</h2>
@@ -26,7 +20,7 @@ const Footprint = () => {
                 </div>
                 <div className={styles.decorativeSquares1}></div>
             </div>
-        </motion.div>
+        
     );
 };
 

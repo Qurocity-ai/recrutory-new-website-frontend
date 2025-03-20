@@ -45,6 +45,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .heading {
     color: #b22222;
     font-size: 24px;
@@ -57,14 +58,12 @@
 .subtitle {
     color: #b22222;
     font-size: 16px;
-    /* margin-bottom: -20px; */
     text-align: left;
     margin-top: -8px;
     margin-left: 30px;
 }
 
 .hr {
-    
     border: 1px solid #9ecbdf;
     width: 550px;
     margin-left: 30px;
@@ -73,7 +72,6 @@
 
 .contentWrapper {
     display: flex;
-    /* justify-content: space-between; */
     gap: 150px;
     text-align: left;
 }
@@ -90,7 +88,7 @@
     margin-right: 50px;
 }
 
-list {
+.list {
     list-style-type: disc;
     padding-left: 20px;
     color: #03314b;
@@ -100,13 +98,15 @@ list {
 
 .list li {
     margin-bottom: 20px;
-    display: block; /* Ensures proper bullet rendering */
+    display: block;
+    /* Ensures proper bullet rendering */
     color: #03314b;
 }
 
 .list li::marker {
-    content: "\2022 "; /* Bullet point fix */
-    color: #03314b; 
+    content: "\2022 ";
+    /* Bullet point fix */
+    color: #03314b;
     font-weight: bold;
 }
 
@@ -114,4 +114,86 @@ list {
     color: #03314b;
 }
 
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
 
+    .contentWrapper {
+        gap: 80px;
+    }
+
+    .textContainer,
+    .descriptionContainer {
+        width: 40%;
+    }
+
+    .hr {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 25px;
+    }
+
+    .heading {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    .contentWrapper {
+        flex-direction: column;
+        gap: 30px;
+        text-align: left;
+    }
+
+    .textContainer,
+    .descriptionContainer {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .hr {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 98%;
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    .contentWrapper {
+        gap: 20px;
+    }
+
+    .hr {
+        width: 100%;
+    }
+
+    .list li {
+        font-size: 12px;
+    }
+}

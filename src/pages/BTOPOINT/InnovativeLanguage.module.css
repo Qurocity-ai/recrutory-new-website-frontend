@@ -9,6 +9,7 @@
     padding: 40px;
     text-align: center;
 }
+
 .decorativeSquares {
     position: absolute;
     top: 0;
@@ -28,22 +29,22 @@
     border-radius: 5px;
 }
 
-.decorativeSquares::before{
+.decorativeSquares::before {
     margin-left: 28px;
 }
-.decorativeSquares1{
+
+.decorativeSquares1 {
     content: "";
-        display: block;
-        width: 30px;
-        height: 30px;
-        background-color: #b22222;
-        border-radius: 5px;
-        position: absolute;
-            bottom: 0;
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            /* gap: 5px; */
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #b22222;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .heading {
@@ -54,14 +55,14 @@
     margin-top: -10px;
     margin-left: 30px;
 }
-.hr{
+
+.hr {
     border: 1px solid #9ecbdf;
     width: 550px;
     margin-left: 30px;
     margin-top: -18px;
-  
-  
 }
+
 .subtitle {
     color: #b22222;
     font-size: 16px;
@@ -69,7 +70,6 @@
     text-align: left;
     margin-top: -10px;
     margin-left: 30px;
-
 }
 
 .contentWrapper {
@@ -83,8 +83,8 @@
 .textContainer {
     width: 65%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-    gap: 10px; /* Space between the columns */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     text-align: left;
 }
 
@@ -93,8 +93,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-
-
 
 .serviceTitle {
     font-size: 1.2rem;
@@ -116,4 +114,84 @@
 .serviceImage {
     width: 100%;
     height: auto;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    .heading {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .hr {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .contentWrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .textContainer {
+        width: 100%;
+        grid-template-columns: 1fr;
+        /* Single column on mobile */
+    }
+
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns instead of 3 */
+        gap: 10px;
+    }
+
+    .imageContainer {
+        width: 80%;
+        margin-top: 15px;
+    }
+}
+
+/* Extra Small Screens (Phones) */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .hr {
+        width: 80%;
+        margin-left: 10px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .gridContainer {
+        grid-template-columns: 1fr;
+        /* Single column layout */
+    }
+
+    .imageContainer {
+        width: 90%;
+    }
 }

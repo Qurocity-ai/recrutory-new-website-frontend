@@ -12,6 +12,7 @@ import HiringAssessment from '../BTOPOINT/HiringAssessment';
 import LanguageDistribution from '../BTOPOINT/LanguageDistribution';
 import ContactInfo from '../BTOPOINT/ContactInfo';
 import styles from './NewPage.module.css';
+import UnlockingPotential from '../BTOPOINT/UnlockingPotential';
 
 function NewPage() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -20,18 +21,19 @@ function NewPage() {
 
   // All Slide Components
   const slides = [
+    // { Component: UnlockingPotential, name: 'UnlockingPotential' },
     { Component: WhyWeMatter, name: 'WhyWeMatter' },
     { Component: MarketInsights, name: 'MarketInsights' },
     { Component: ServicePortfolio, name: 'ServicePortfolio' },
     { Component: InnovativeLanguagePlatforms, name: 'InnovativeLanguagePlatforms' },
+    { Component: Workflow, name: 'Workflow' },
+    { Component: LinguisticProcess, name: 'LinguisticProcess' },
+    { Component: Footprint, name: 'Footprint' },
     { Component: HiringOpt, name: 'HiringOpt' },
     { Component: CoreService, name: 'CoreService' },
     { Component: HiringAssessment, name: 'HiringAssessment' },
     { Component: LanguageDistribution, name: 'LanguageDistribution' },
     { Component: ContactInfo, name: 'ContactInfo' },
-    { Component: Workflow, name: 'Workflow' },
-    { Component: Footprint, name: 'Footprint' },
-    { Component: LinguisticProcess, name: 'LinguisticProcess' }
   ];
 
   const changeSlide = (direction) => {
@@ -49,6 +51,9 @@ function NewPage() {
       return newIndex;
     });
   };
+
+
+
 
   useEffect(() => {
     const handleScroll = (e) => {

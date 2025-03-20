@@ -3,12 +3,7 @@ import styles from "./Workflow.module.css";
 import { motion } from "framer-motion";
 const Workflow = () => {
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: false, amount: 0.2 }}
-        >
+       
             <div className={styles.container}>
                 <div className={styles.decorativeSquares}></div>
                 <div className={styles.header}>
@@ -70,7 +65,7 @@ const Workflow = () => {
                 </div>
                 <div className={styles.decorativeSquares1}></div>
             </div>
-        </motion.div>
+       
 
 
 
