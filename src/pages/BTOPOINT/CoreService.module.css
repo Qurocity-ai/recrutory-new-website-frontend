@@ -1,6 +1,7 @@
 .container {
     position: relative;
     width: 80%;
+    height: auto;
     margin: 50px auto;
     background: white;
     padding: 40px;
@@ -51,43 +52,49 @@
     justify-content: space-between;
     align-items: center;
     text-align: left;
+    margin-bottom: 20px;
+    margin-top: 20px
 }
 
 .textContainer {
     width: 65%;
     padding: 20px;
+   
 }
 
 .imageContainer {
-    width: 35%;
+    width: 30%;
    
 }
 
 .serviceImage {
-    width: 100%;
+    width: 90%;
     height: auto;
-    border-radius: 8px;
+   
 }
 
 .heading {
     color: #b22222;
     font-size: 24px;
     font-weight: 600;
+    text-align: left;
+    margin-top: -40px;
+    margin-left: 10px;
     margin-bottom: -10px;
-    margin-top: -90px;
 }
 
 .hr {
     border: 1px solid #9ecbdf;
     width: 550px;
-    margin: 10px 0;
+    margin-left: 10px;
 }
 
 .subtitle {
     color: #b22222;
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     margin-top: -8px;
+    margin-left: 10px;
 }
 
 .list {
@@ -112,4 +119,30 @@
 .list li span {
     font-weight: normal;
     color: #03314b;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .contentWrapper {
+        flex-direction: column;
+    }
+
+    .textContainer,
+    .imageContainer {
+        width: 100%;
+    }
+
+    .heading,
+    .subtitle {
+        text-align: left;
+        margin-left: 10px;
+        
+    }
+    .heading{
+        margin-top: -40px;
+        font-size: 22px;
+    }
+    .hr{
+        margin-left: 30px;
+    }
 }

@@ -21,7 +21,7 @@ function NewPage() {
 
   // All Slide Components
   const slides = [
-    // { Component: UnlockingPotential, name: 'UnlockingPotential' },
+    { Component: UnlockingPotential, name: 'UnlockingPotential' },
     { Component: WhyWeMatter, name: 'WhyWeMatter' },
     { Component: MarketInsights, name: 'MarketInsights' },
     { Component: ServicePortfolio, name: 'ServicePortfolio' },

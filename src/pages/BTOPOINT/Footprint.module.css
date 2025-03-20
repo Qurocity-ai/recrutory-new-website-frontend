@@ -1,7 +1,7 @@
 .container {
     position: relative;
     width: 80%;
-    height: 60vh;
+    height: auto;
     margin: 50px auto;
     background: white;
     padding: 40px;
@@ -136,26 +136,32 @@
     }
 
     .heading {
-        font-size: 18px;
-        margin-left: 10px;
+        font-size: 22px;
+        margin-left: 30px;
+        margin-top: 20px;
     }
 
     .hr {
         width: 100%;
+        margin-left: 30px;
     }
 
     .subheading {
-        font-size: 13px;
-        margin-left: 10px;
+        font-size: 14px;
+        margin-left: 30px;
     }
 
     .gridContainer {
         grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
+        /* gap: 10px; */
+    margin-bottom: 20px;
     }
 
     .card {
-        padding: 10px;
+        /* padding: 10px; */
+        margin-left: 20px;
+        margin-bottom: -40px;
+       
     }
 
     .card h3 {

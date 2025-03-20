@@ -3,11 +3,12 @@
 .container {
     position: relative;
     width: 80%;
-    height: 60vh;
+    height: auto;
     margin: 50px auto;
     background: white;
     padding: 40px;
     text-align: center;
+    
 }
 
 .decorativeSquares {
@@ -66,14 +67,16 @@
     font-size: 16px;
     text-align: left;
     margin-left: 30px;
+    margin-top: -8px;
 }
 
 .contentWrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: -50px;
+    /* margin-bottom: 50px; */
     margin-left: 30px;
+    margin-top: -50px;
 }
 
 .textContainer {
@@ -108,7 +111,7 @@
 }
 
 .serviceImage {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
@@ -164,31 +167,45 @@
 /* Extra Small Screens (Phones) */
 @media (max-width: 480px) {
     .container {
-        width: 95%;
+        width: 100%;
         padding: 15px;
     }
 
     .heading {
-        font-size: 18px;
-        margin-left: 10px;
+        font-size: 22px;
+        margin-left: 30px;
+        margin-top: 20px;
     }
 
     .hr {
         width: 80%;
-        margin-left: 10px;
+        margin-left: 30px;
     }
 
     .subtitle {
-        font-size: 12px;
-        margin-left: 10px;
+        font-size: 14px;
+        margin-left: 30px;
+        /* margin-bottom: 60px; */
     }
 
     .gridContainer {
         grid-template-columns: 1fr;
         /* Single column layout */
+        
     }
 
     .imageContainer {
         width: 90%;
     }
+    .serviceItem{
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 60px;
+        margin-bottom: -50px;
+    }
+    .serviceDescription{
+        margin-top: -10px;
+        /* margin-bottom: 1px; */
+    }
+    
 }

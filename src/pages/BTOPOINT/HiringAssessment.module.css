@@ -1,6 +1,7 @@
 .container {
     position: relative;
     width: 80%;
+    height: auto;
     margin: 50px auto;
     background: white;
     padding: 40px;
@@ -74,6 +75,8 @@
     display: flex;
     gap: 150px;
     text-align: left;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .textContainer {
@@ -176,24 +179,30 @@
     }
 
     .heading {
-        font-size: 18px;
-        margin-left: 10px;
+        font-size: 22px;
+        margin-left: 40px;
+        margin-top: 20px;
     }
 
     .subtitle {
-        font-size: 13px;
-        margin-left: 10px;
+        font-size: 14px;
+        margin-left: 40px;
+        margin-bottom: -10px;
     }
 
     .contentWrapper {
-        gap: 20px;
+        gap: 10px;
     }
 
     .hr {
         width: 100%;
+        margin-left: 40px;
     }
 
     .list li {
         font-size: 12px;
+    }
+    .descriptionContainer{
+        margin-left: 30px;
     }
 }

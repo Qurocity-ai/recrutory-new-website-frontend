@@ -10,7 +10,8 @@ const UnlockingPotential = () => {
             <h1 className={styles.heading}>
                 UNLOCKING BUSINESS POTENTIAL <br /> THROUGH LANGUAGE
             </h1>
-            <div className={styles.underline}></div>
+            <hr className={styles.hr} />
+            
             <p className={styles.subtitle}>
                 Explore how linguistic expertise drives corporate growth and enhances
                 global communication strategies.

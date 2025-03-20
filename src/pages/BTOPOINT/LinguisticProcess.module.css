@@ -1,7 +1,7 @@
 .container {
     position: relative;
     width: 80%;
-    height: 60vh;
+    height: auto;
     margin: 50px auto;
     background: white;
     padding: 40px;
@@ -41,8 +41,9 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-top: 25px;
+    gap: 5px;
+    margin-top: 20px;
+    
 }
 
 .card {
