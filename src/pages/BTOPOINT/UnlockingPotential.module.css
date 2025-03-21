@@ -48,11 +48,12 @@
     flex-direction: column;
 }
 .hr {
-    border: 1px solid #9ecbdf;
+    border: 1px solid #b22222;
     width: 100%;
-    max-width: 550px;
+    max-width: 700px;
     margin-left: 20px;
     margin-top: -10px;
+    
 }
 
 .heading {
@@ -60,18 +61,21 @@
     font-size: 22px;
     font-weight: 600;
     text-align: left;
-    margin-top: 10px;
+    margin-top: 130px;
     margin-left: 20px;
+    font-size: 40px;
 }
 
 
 
 .subtitle {
-    color: #b22222;
-    font-size: 16px;
+    color: #387792;
+    font-size: 18px;
     margin-bottom: 15px;
     margin-top: -8px;
     margin-left: 20px;
+    width: 650px;
+
 }
 
 @media (max-width: 768px) {

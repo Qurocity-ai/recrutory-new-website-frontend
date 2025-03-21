@@ -77,6 +77,30 @@
     background-color: #3498db;
     transform: scale(1.3);
 }
+
+
+.mobileWrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.mobileCarousel {
+    width: 90%;
+    height: 50vh;
+   
+}
+
+.slideImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 /* Adjusting Content Section for Mobile */
 @media (max-width: 768px) {
     .contentSection {

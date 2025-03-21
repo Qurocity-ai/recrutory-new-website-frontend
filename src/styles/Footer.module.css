@@ -35,6 +35,7 @@
     color: black;
     display: inline-block;
     cursor: pointer;
+ 
 }
 
 .footer ul {
@@ -44,7 +45,7 @@
 
 .footer ul li {
     margin-bottom: 10px;
-    /* list-style: none; */
+    list-style: none;
 }
 
 .footer ul li a {
@@ -56,8 +57,9 @@
     font-family: "Poppins", sans-serif;
     text-align: justify;
     letter-spacing: 0.5px;
-    /* list-style: none; */
+    list-style: none;
 }
+
 
 .footer ul li a:hover {
     /* color: #02586F; */
@@ -84,6 +86,7 @@
             letter-spacing: 0.5px;
 }
 /* Media Queries for Responsive Design */
+
 
 /* Large screens */
 @media screen and (max-width: 1024px) {
@@ -151,3 +154,4 @@
         padding: 20px 10px;
     }
 }
+
