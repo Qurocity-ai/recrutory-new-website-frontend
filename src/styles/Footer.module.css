@@ -40,6 +40,7 @@
     flex-direction: column;
     gap: 10px;
     margin-top: 1rem;
+   
 }
 
 .links_container a {
@@ -54,7 +55,8 @@
 
 .links_container a:hover {
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .footer_about p,
@@ -90,10 +92,15 @@
 @media screen and (max-width: 480px) {
     .links_container a {
         font-size: 14px;
-    }
 
+    }
+    .links_container {
+        align-items: center;
+    }
+    
     .footer_contact p {
         font-size: 12px;
+        text-align: center;
     }
 
     .footer_bottom {

@@ -10,7 +10,6 @@
 .contentSection {
     position: relative;
     height: 100vh;
-    /* Reduce height for small screens */
     overflow: hidden;
     margin: 15px 0;
     border-radius: 10px;
@@ -78,34 +77,32 @@
     transform: scale(1.3);
 }
 
-
+/* Mobile Wrapper */
 .mobileWrapper {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
+/* Mobile Carousel */
 .mobileCarousel {
     width: 90%;
     height: 50vh;
-   
 }
 
+/* Slide Image */
 .slideImage {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-
 /* Adjusting Content Section for Mobile */
 @media (max-width: 768px) {
     .contentSection {
         height: 70vh;
-        /* Adjust height */
         margin: 10px 0;
     }
 
@@ -115,59 +112,137 @@
 
     .slide {
         height: 100%;
-        /* Ensure slides take full available height */
     }
 
     .pageIndicator {
-        right: 5px;
-        gap: 6px;
-    }
-
-    .dot {
-        width: 7px;
-        height: 7px;
+        display: none; /* Hide dots on mobile */
     }
 }
 
 /* For Very Small Screens */
 @media (max-width: 480px) {
     .contentSection {
-        height: 200vh;
+        height: 70vh;
         margin: 5px 0;
         border-radius: 5px;
-        /* border: 1px solid red; */
     }
 
+    .slick-prev,
+.slick-next {
+    z-index: 10;
+    font-size: 24px;
+    color: black; /* Adjust color as needed */
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    font-size: 24px;
+    color: black; /* Ensuring arrow visibility */
+}
+
+}
+
+
+/* Mobile Wrapper */
+.mobileWrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.mobileCarousel {
+    width: 90%;
+    height: 50vh;
+}
+
+.slideImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Segmented Line Navigation */
+.lineNavigation {
+    display: flex;
+    width: 80%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 10px auto;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.lineSegment {
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgba(20, 20, 20, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.lineSegment:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.activeSegment {
+    background-color: #3498db;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
     .pageIndicator {
-        right: 3px;
-        gap: 5px;
-        top: 20%;
-    }
-
-    .dot {
-        width: 6px;
-        height: 6px;
-
-       
-
-    }
-
-    /* Improve Slide Animation on Small Screens */
-    .slide {
-        transform: translateY(100%);
-        transition: transform 2s ease-in-out, opacity 2s ease-in-out;
-    }
-
-    .active {
-        transform: translateY(0);
-        opacity: 1;
-        z-index: 2;
-    }
-
-    .previous {
-        transform: translateY(-100%);
-        opacity: 0;
-        z-index: 1;
+        display: none; /* Hide dots on mobile */
     }
 }
+
+/* Segmented Line Navigation */
+.lineNavigation {
+    display: flex;
+    width: 80%;
+    height: 4px;
+    justify-content: center;
+    gap: 8px;  /* Increased gap between segments */
+    margin: 10px auto;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom:230px ;
+}
+
+/* Individual Line Segments */
+.lineSegment {
+    width: 4%;  /* Reduced width to allow more gaps */
+    height: 100%;
+    cursor: pointer;
+    background-color: rgba(166, 44, 44, 0.2);
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 2px;
+}
+
+.lineSegment:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Active segment */
+.activeSegment {
+    background-color: #3498db;
+}
+
 
