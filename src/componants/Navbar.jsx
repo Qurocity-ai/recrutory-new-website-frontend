@@ -47,7 +47,7 @@ const Navbar = () => {
                     Corporate
                 </Link>
                 
-                <Link to="/assesment" className={
+                <Link to="/CenterofExcellence" className={
                     `${getLinkClass("/")} ${Nav.topper}`
                 } onClick={closeMenu}>
                    Center of Excellence

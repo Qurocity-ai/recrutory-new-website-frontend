@@ -30,7 +30,7 @@ function AllRoutes() {
         <Route path="/trends" element={<Trends />} />
         <Route path="/industries" element={<Industries />} />
         <Route path='/corporate' element={<Coperate />} />
-        <Route path='/assesment' element={<CenterOfExcellence />} />
+        <Route path='/CenterofExcellence' element={<CenterOfExcellence />} />
         <Route path="/details/:id" element={<CardDetails/>} />
         <Route path="/corporatedeck" element={<NewPage/>} />
 

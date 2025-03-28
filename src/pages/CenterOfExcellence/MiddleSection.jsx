@@ -12,7 +12,7 @@ const MiddleSection = () => {
 
   useEffect(() => {
     axios
-      .get("https://recrutory-new-website-backend.onrender.com/user")
+      .get("https://recrutory-new-website-backend-3.onrender.com/user")
       .then((response) => {
         setUsers(response.data);
         console.log(users)
